@@ -12,6 +12,7 @@
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Chang Sung Korea</h1>
       <nav class="space-x-6 hidden md:block">
+        <a href="assets/company-profile.pdf" target="_blank" class="hover:text-indigo-600">회사소개서</a>
         <a href="#about" class="hover:text-indigo-600">회사 소개</a>
         <a href="#products" class="hover:text-indigo-600">제품</a>
         <a href="#contact" class="hover:text-indigo-600">문의</a>
@@ -39,46 +40,48 @@
       <div class="max-w-4xl mx-auto px-6">
         <h3 class="text-3xl font-semibold mb-4">회사 소개</h3>
         <p class="text-lg leading-relaxed">
-          2017년 설립된 창성코리아는 ~~을 제공합니다.
+          창성코리아는 <strong>2018년 8월 8일</strong> 설립된
+          글로벌 <strong>오일 트레이딩∙중개</strong> 전문 기업입니다.<br>
+          카자흐스탄 등 주요 리파이너리와 협력해 고품질 석유 제품을
+          경쟁력 있는 가격으로 공급합니다.:contentReference[oaicite:5]{index=5}
         </p>
       </div>
     </section>
 
     <!-- 제품 -->
-    <section id="products" class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-6">
-        <h3 class="text-3xl font-semibold mb-10 text-center">대표 제품</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- 카드 1 -->
-          <div class="rounded-2xl shadow-lg overflow-hidden">
-            <img src="https://picsum.photos/400/260?random=1" alt="TheraMaster X"
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-semibold mb-2">TheraMaster X</h4>
-              <p class="text-sm mb-4">AI 탑재.</p>
-            </div>
-          </div>
-          <!-- 카드 2 -->
-          <div class="rounded-2xl shadow-lg overflow-hidden">
-            <img src="https://picsum.photos/400/260?random=2" alt="HealingTouch Pro"
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-semibold mb-2">HealingTouch Pro</h4>
-              <p class="text-sm mb-4">스마트 ~~ 제공.</p>
-            </div>
-          </div>
-          <!-- 카드 3 -->
-          <div class="rounded-2xl shadow-lg overflow-hidden">
-            <img src="https://picsum.photos/400/260?random=3" alt="VitalStretch Mini"
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h4 class="text-xl font-semibold mb-2">VitalStretch Mini</h4>
-              <p class="text-sm mb-4">~~~어.</p>
-            </div>
-          </div>
-        </div>
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+      <li class="p-4 shadow rounded-xl">EN590</li>
+      <li class="p-4 shadow rounded-xl">DIESEL D2</li>
+      <li class="p-4 shadow rounded-xl">Jet A-1</li>
+      <li class="p-4 shadow rounded-xl">Gasoline 92</li>
+      <li class="p-4 shadow rounded-xl">Gasoline 95</li>
+      <li class="p-4 shadow rounded-xl">Crude Oil</li>
+      <li class="p-4 shadow rounded-xl">Benzene</li>
+      <li class="p-4 shadow rounded-xl">Naphtha</li>
+      <li class="p-4 shadow rounded-xl">LCO</li>
+      <li class="p-4 shadow rounded-xl">LNG</li>
+      <li class="p-4 shadow rounded-xl">LPG</li>
+      <li class="p-4 shadow rounded-xl">VLSFO</li>
+      <li class="p-4 shadow rounded-xl">CST 180</li>
+    </ul>
+
+    <!-- 파트너쉽 -->
+    <section id="partners" class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-3xl font-semibold mb-6">주요 거래처</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Atyrau Oil Refinery LLP (ANPZ LLP)</li>
+          <li>Tengizchevroil LLP (TCO)</li>
+          <!-- 기존 파트너가 있다면 이어서 나열 -->
+        </ul>
       </div>
     </section>
+
+    <!-- PDF 다운로드 -->
+    <a href="assets/company-profile.pdf" target="_blank"
+       class="mt-4 inline-block bg-gray-800 text-white px-5 py-2 rounded-lg shadow">
+       PDF 다운로드
+    </a>
 
     <!-- 문의 -->
     <section id="contact" class="py-16">
