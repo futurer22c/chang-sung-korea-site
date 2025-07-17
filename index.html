@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>창성코리아 (CHANGSUNG KOREA CO., LTD)</title>
+    <title>CHANGSUNG KOREA CO., LTD</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Tailwind CSS 기본 설정 외 추가 스타일 */
+        /* Additional styles besides default Tailwind CSS */
         body {
-            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         .section-title {
             @apply text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4;
@@ -24,18 +24,19 @@
 </head>
 <body class="bg-white text-gray-700">
 
-    <!-- 네비게이션 바 -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-700">CHANGSUNG KOREA</a>
+            <a href="#" class="flex items-center text-2xl font-bold text-blue-700">
+                <img src="images/logo.png" alt="Changsug Korea Logo" class="h-8 mr-3">
+                <span>CHANGSUNG KOREA</span>
+            </a>
             <div class="hidden md:flex space-x-8">
-                <a href="#about" class="nav-link">회사 소개</a>
-                <a href="#products" class="nav-link">주요 사업</a>
-                <a href="#team" class="nav-link">경영진</a>
-                <a href="#partners" class="nav-link">파트너사</a>
-                <a href="#contact" class="nav-link">연락처</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#products" class="nav-link">Our Business</a>
+                <a href="#team" class="nav-link">Our Team</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <!-- 모바일 메뉴 버튼 (기능은 미구현) -->
             <div class="md:hidden">
                 <button class="text-gray-600 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -45,133 +46,110 @@
     </header>
 
     <main>
-        <!-- 히어로 섹션: 로컬 이미지 경로로 수정 -->
-        <!-- 안내: 위에 제공된 이미지를 다운로드하여 'images' 폴더에 'hero-background.jpg'로 저장해주세요. -->
         <section class="relative h-[60vh] md:h-[70vh] bg-cover bg-center text-white" style="background-image: url('images/Background.png');">
             <div class="absolute inset-0 bg-black/50"></div>
             <div class="relative h-full flex flex-col justify-center items-center text-center px-4">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Global Oil Trading and<br>Eco-friendly Enterprises</h1>
-                <p class="text-lg md:text-xl max-w-3xl">최고 품질의 석유 제품을 가장 경쟁력 있는 가격으로 공급하며, 지속 가능한 미래를 만들어갑니다.</p>
+                <p class="text-lg md:text-xl max-w-3xl">Delivering the highest quality petroleum products at the most competitive prices, we are building a sustainable future.</p>
             </div>
         </section>
 
-        <!-- 회사 소개 (About Us) -->
         <section id="about" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-center font-extrabold">우리를 이끄는 사람들</h2>
+                <h2 class="section-title text-center font-extrabold">About Chungsung Korea</h2>
                 <div class="max-w-4xl mx-auto text-lg text-center leading-relaxed">
-                    <p>2018년 설립된 창성코리아는 끊임없이 변화하는 글로벌 에너지 시장의 요구에 부응하기 위해 탄생했습니다. 창성코리아는 GEMS HABIL의 성공적인 파트너십과 경험을 바탕으로, 김정한 회장의 리더십 아래 설립되었습니다. 우리는 글로벌 정유사들과의 긴밀한 협력을 통해 새로운 시장을 개척하고, 차별화된 고객 기대를 충족시키기 위해 끊임없이 연구하고 발전하고 있습니다. 우리의 목표는 단순히 석유 제품을 공급하는 것을 넘어, 혁신적인 솔루션과 신뢰를 바탕으로 고객과 함께 성장하는 것입니다.</p>
+                    <p>Established in 2018, Chungsung Korea was born to meet the demands of the ever-changing global energy market. Building on the successful partnership and experience of GEMS HABIL, Chungsung Korea was founded under the leadership of Chairman Kim Jung-han. We are constantly researching and developing to pioneer new markets and meet differentiated customer expectations through close cooperation with global oil refineries. Our goal is to go beyond simply supplying petroleum products and to grow together with our customers based on innovative solutions and trust.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 주요 사업 (Our Products) -->
         <section id="products" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-center font-bold">주요 사업</h2>
-                <p class="section-subtitle text-center">세계 시장을 무대로 다양한 고품질 석유화학 제품을 안정적으로 공급합니다.</p>
+                <h2 class="section-title">Our Core Business</h2>
+                <p class="section-subtitle">We reliably supply a variety of high-quality petrochemical products to the global market.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- 제품 카드 -->
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">EAST SIBERIAN PACIFIC OCEAN CRUDE OIL (ESPO)</h3>
-                        <p class="text-gray-600">동시베리아-태평양 송유관을 통해 공급되는 고품질 원유입니다.</p>
+                        <p class="text-gray-600">High-quality crude oil supplied through the East Siberian-Pacific Ocean pipeline.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">EN590 GAS OIL 10PPM</h3>
-                        <p class="text-gray-600">유럽 표준을 충족하는 초저유황 경유로, 환경 친화적입니다.</p>
+                        <p class="text-gray-600">An ultra-low sulfur gas oil that meets European standards and is environmentally friendly.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">RUSSIAN LIGHT CYCLE OIL (LCO)</h3>
-                        <p class="text-gray-600">다양한 산업 분야에서 활용되는 경질 사이클 오일입니다.</p>
+                        <p class="text-gray-600">A light cycle oil used in various industrial sectors.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">DIESEL D2 (GOST 305-82)</h3>
-                        <p class="text-gray-600">광범위하게 사용되는 표준 디젤 연료입니다.</p>
+                        <p class="text-gray-600">A widely used standard diesel fuel.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">RUSSIAN EXPORT BLEND CRUDE OIL (REBCO)</h3>
-                        <p class="text-gray-600">러시아의 대표적인 수출용 원유입니다.</p>
+                        <p class="text-gray-600">Russia's representative export blend crude oil.</p>
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">MAZUT M100</h3>
-                        <p class="text-gray-600">발전소 및 선박 연료로 사용되는 중유입니다.</p>
+                        <p class="text-gray-600">A heavy fuel oil used for power plants and ship fuel.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 경영진 (Executive Team) -->
         <section id="team" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <p class="section-subtitle text-center font-bold">각 분야 전문가들이 모여 신뢰기반 오일 트레이딩 파트너십을 이끌고 있습니다.</p>
+                <h2 class="section-title">Our Executive Team</h2>
+                <p class="section-subtitle">Top experts in each field have gathered to lead Chungsung Korea's success.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-                    <!-- 경영진 카드: 대표이사 사진 URL 수정 -->
-                    <!-- 안내: 대표이사님 사진도 다운로드하여 'images/ceo.png' 와 같이 저장하고 경로를 수정하는 것을 권장합니다. -->
                     <div class="text-center p-6">
-                        <img class="w-64 h-64 rounded-full mx-auto mb-4 shadow-md object-cover" src="images/CEO.png" alt="김정한 회장">
-                        <h4 class="text-xl font-bold text-gray-800">김정한</h4>
-                        <p class="text-blue-600 font-medium">회장 (Chairman)</p>
-                        <p class="text-sm mt-2">금융 및 에너지 산업 전반에 걸친 깊이 있는 통찰력과 경험을 바탕으로 회사를 이끌고 있습니다.</p>
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md object-cover" src="https://i.ibb.co/yWY4gcr/ceo-kim-jung-han.png" alt="Chairman Kim Jung-han">
+                        <h4 class="text-xl font-bold text-gray-800">Kim Jung-han</h4>
+                        <p class="text-blue-600 font-medium">Chairman</p>
+                        <p class="text-sm mt-2">Leads the company with deep insight and experience across the financial and energy industries.</p>
                     </div>
                     <div class="text-center p-6">
-                        <img class="w-64 h-64 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=Y.S.+Park" alt="박윤식 부회장">
-                        <h4 class="text-xl font-bold text-gray-800">박윤식</h4>
-                        <p class="text-blue-600 font-medium">부회장 (Deputy Vice Chairman)</p>
-                        <p class="text-sm mt-2">30년 이상의 물류 경험과 국제 정유사 네트워크를 보유한 전문가입니다.</p>
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=Y.S.+Park" alt="Deputy Vice Chairman Y.S. Park">
+                        <h4 class="text-xl font-bold text-gray-800">Park Yoon-sik</h4>
+                        <p class="text-blue-600 font-medium">Deputy Vice Chairman</p>
+                        <p class="text-sm mt-2">An expert with over 30 years of logistics experience and a network of international oil refineries.</p>
                     </div>
                     <div class="text-center p-6">
-                        <img class="w-64 h-64 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=E.J.+Lee" alt="이은재 부사장">
-                        <h4 class="text-xl font-bold text-gray-800">이은재</h4>
-                        <p class="text-blue-600 font-medium">부사장 (Deputy Senior Vice President)</p>
-                        <p class="text-sm mt-2">20년 이상의 해외 비즈니스 경험으로 글로벌 파트너십을 담당합니다.</p>
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=E.J.+Lee" alt="Deputy Senior Vice President E.J. Lee">
+                        <h4 class="text-xl font-bold text-gray-800">Lee Eun-jae</h4>
+                        <p class="text-blue-600 font-medium">Deputy Senior Vice President</p>
+                        <p class="text-sm mt-2">Manages global partnerships with over 20 years of overseas business experience.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 파트너사 (Our Partners) -->
         <section id="partners" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="section-title text-center font-bold">글로벌 파트너</h2>
-                <p class="section-subtitle text-center">세계 유수의 기업들이 창성코리아와 함께하고 있습니다.</p>
+                <h2 class="section-title">Our Global Partners</h2>
+                <p class="section-subtitle">The world's leading companies are with Chungsung Korea.</p>
                 <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
-                    <!-- 중요: 로고 이미지를 다운로드하여 'images/gs-caltex.png' 와 같이 프로젝트 폴더에 저장하고, src를 'images/gs-caltex.png'로 변경하는 것을 권장합니다. -->
-                    <img src='images/Atyrau Oil Refinery LLP (ANPZ LLP).png', alt="Atyrau Oil Refinery LLP (ANPZ LLP).png" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
-                    <img src='images/Tengizchevroil LLP (TCO).png', alt="Atyrau Oil Refinery LLP (ANPZ LLP).png" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
+                    <img src='images/Atyrau%20Oil%20Refinery%20LLP%20(ANPZ%20LLP).png' alt="Atyrau Oil Refinery LLP Logo" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
+                    <img src='images/Tengizchevroil%20LLP%20(TCO).png' alt="Tengizchevroil LLP Logo" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 푸터 -->
     <footer id="contact" class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">CHANGSUNG KOREA CO., LTD</h3>
-                    <p class="text-gray-400">판매자와 구매자 모두의 성공을 위한<br>기반을 만들어갑니다.</p>
+                    <p class="text-gray-400">Building a foundation for the success<br>of both sellers and buyers.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">연락 정보</h3>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
                     <ul class="space-y-2 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="mr-2 mt-1">📍</span>
-                            <span>대한민국 서울시 강남구 영동대로 511, 트레이드타워 33층</span>
-                        </li>
                         <li class="flex items-center">
-                            <span class="mr-2">📞</span>
-                            <a href="tel:82-2-551-0022" class="hover:text-blue-400">82-2-551-0022</a>
-                        </li>
-                         <li class="flex items-center">
                             <span class="mr-2">✉️</span>
-                            <a href="mailto:solda119@naver.com" class="hover:text-blue-400">solda119@naver.com</a>
+                            <a href="mailto:info@changsungkorea.com" class="hover:text-blue-400">mailto:info@changsungkorea.com</a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">오시는 길</h3>
-                    <!-- 실제 구글 지도 링크로 교체하세요 -->
-                    <a href="https://www.google.com/maps/place/%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%83%80%EC%9B%8C/data=!3m1!4b1!4m6!3m5!1s0x357ca491c49642c7:0x2c262439cf012599!8m2!3d37.5085693!4d127.0602494!16zL20vMDdseDln?entry=ttu" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition-colors">지도에서 위치 보기</a>
                 </div>
             </div>
             <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
