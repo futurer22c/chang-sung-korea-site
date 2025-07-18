@@ -46,27 +46,26 @@
     </header>
 
     <main>
-        <!-- ▼▼▼ HERO SECTION MODIFIED FOR VIDEO BACKGROUND ▼▼▼ -->
-        <section class="relative h-[60vh] md:h-[70vh] text-white overflow-hidden">
-            <!-- Video Container -->
-            <div class="hero-video-container absolute top-0 left-0">
-                <video autoplay loop muted playsinline id="hero-video">
-                    <!-- ** 중요 **: 이 경로를 실제 동영상 파일 경로로 변경하세요. (예: videos/background.mp4) -->
-                    <source src="images/기업영상.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <!-- ▼▼▼ HERO SECTION (완전히 새로 작성됨) ▼▼▼ -->
+        <section class="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
             
-            <!-- Dark Overlay -->
-            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <!-- 동영상 배경 -->
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="images/기업영상.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-            <!-- Content -->
-            <div class="relative h-full flex flex-col justify-center items-center text-center px-4 z-20">
+            <!-- 반투명 오버레이 -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+
+            <!-- 텍스트 콘텐츠 -->
+            <div class="relative z-20 px-4">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Global Oil Trading and<br>Eco-friendly Enterprises</h1>
                 <p class="text-lg md:text-xl max-w-3xl">Delivering the highest quality petroleum products at the most competitive prices, we are building a sustainable future.</p>
             </div>
+
         </section>
-        <!-- ▲▲▲ END OF MODIFIED SECTION ▲▲▲ -->
+        <!-- ▲▲▲ HERO SECTION 끝 ▲▲▲ -->
 
         <section id="about" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
