@@ -46,13 +46,27 @@
     </header>
 
     <main>
-        <section class="relative h-[60vh] md:h-[70vh] bg-cover bg-center text-white" style="background-image: url('images/Background.png');">
+        <!-- ▼▼▼ HERO SECTION MODIFIED FOR VIDEO BACKGROUND ▼▼▼ -->
+        <section class="relative h-[60vh] md:h-[70vh] text-white overflow-hidden">
+            <!-- Video Container -->
+            <div class="hero-video-container">
+                <video autoplay loop muted playsinline id="hero-video">
+                    <!-- ** 중요 **: 이 경로를 실제 동영상 파일 경로로 변경하세요. (예: videos/background.mp4) -->
+                    <source src="images/기업로고.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Dark Overlay -->
             <div class="absolute inset-0 bg-black/50"></div>
+
+            <!-- Content -->
             <div class="relative h-full flex flex-col justify-center items-center text-center px-4">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Global Oil Trading and<br>Eco-friendly Enterprises</h1>
                 <p class="text-lg md:text-xl max-w-3xl">Delivering the highest quality petroleum products at the most competitive prices, we are building a sustainable future.</p>
             </div>
         </section>
+        <!-- ▲▲▲ END OF MODIFIED SECTION ▲▲▲ -->
 
         <section id="about" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
