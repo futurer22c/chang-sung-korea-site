@@ -6,249 +6,245 @@
     <title>CHANGSUNG KOREA CO., LTD - Investor Relations</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 1. Aptos 폰트 자가 호스팅 설정 (.ttf 적용) */
+        /* 1. Aptos 폰트 설정 (.ttf) */
         @font-face {
             font-family: 'Aptos';
-            src: url('fonts/Aptos.ttf') format('truetype');
+            src: url('fonts/Aptos-Regular.ttf') format('truetype');
             font-weight: 400;
-            font-style: normal;
         }
         @font-face {
             font-family: 'Aptos';
             src: url('fonts/Aptos-Bold.ttf') format('truetype');
             font-weight: 700;
-            font-style: normal;
         }
         @font-face {
             font-family: 'Aptos';
             src: url('fonts/Aptos-ExtraBold.ttf') format('truetype');
             font-weight: 800;
-            font-style: normal;
         }
 
-        /* 2. 전역 폰트 적용 */
+        /* 2. 전역 폰트 및 스무스 스크롤 */
         body { 
             font-family: 'Aptos', sans-serif; 
             scroll-behavior: smooth;
         }
 
-        /* 3. 우측 아래로 텍스트 색상과 동일한 그림자 생성 */
-        h1, h2, h3, h4, a { text-shadow: 2px 2px 3px currentcolor; }
-        
-        /* 공통 섹션 스타일 */
-        .section-title { @apply text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-8 tracking-tight; }
-        .section-subtitle { @apply text-center text-blue-600 font-bold mb-12 max-w-3xl mx-auto text-xl; }
-        .nav-link { @apply text-gray-600 hover:text-blue-600 transition-colors duration-300 font-bold tracking-wide; }
+        /* 3. 우측 하단 텍스트 색상 동일 그림자 효과 */
+        * {
+            text-shadow: 1.5px 1.5px 2px currentcolor; 
+        }
+
+        /* 공통 스타일 */
+        .section-title { @apply text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-10 tracking-tight; }
+        .nav-link { @apply text-gray-700 hover:text-blue-700 transition-colors duration-300 font-bold tracking-wide; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-200">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center text-2xl font-extrabold text-blue-800 tracking-tighter">
-                <img src="images/logo.png" alt="Changsung Korea Logo" class="h-14 mr-3">
+            <a href="#" class="flex items-center text-2xl font-extrabold text-blue-800">
+                <img src="images/logo.png" alt="Changsung Korea Logo" class="h-12 mr-3">
                 CHANGSUNG KOREA
             </a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#overview" class="nav-link">Overview</a>
+            <div class="hidden md:flex space-x-8">
                 <a href="#mission" class="nav-link">Mission</a>
+                <a href="#overview" class="nav-link">Overview</a>
                 <a href="#business" class="nav-link">Business</a>
                 <a href="#network" class="nav-link">Network</a>
                 <a href="#team" class="nav-link">Team</a>
-                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
-            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60">
-                <source src="images/hero-video.mp4" type="video/mp4">
-            </video>
+        <section class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
+            <img src="images/hero-bg.jpg" alt="Background" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60">
             
             <div class="relative z-20 px-4">
-                <p class="text-xl md:text-2xl mb-2 font-bold tracking-widest text-blue-300">CHANGSUNG KOREA CO., LTD</p>
+                <p class="text-xl md:text-2xl mb-3 font-bold tracking-widest text-blue-300">CHANGSUNG KOREA CO., LTD</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
                     Global Oil Trading & <br>Eco-Friendly Innovation
                 </h1>
-                <p class="text-2xl mb-6 font-bold text-yellow-400">Energy Connecting The World</p>
-                <p class="text-lg md:text-xl max-w-4xl mx-auto font-medium opacity-90 leading-relaxed">
+                <p class="text-2xl mb-8 font-bold text-yellow-400 tracking-wide">Energy Connecting The World</p>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto font-medium opacity-95 leading-relaxed bg-black/30 p-4 rounded-lg">
                     CHANGSUNG KOREA is committed to global trade to supply the highest quality petroleum products at the most competitive prices.
                 </p>
             </div>
         </section>
 
-        <section id="mission" class="py-20 bg-white">
+        <section id="mission" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">OUR MISSION</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Quality & Transparency</h3>
-                        <p class="text-gray-600">Deliver only premium petroleum products with clear information for every transaction.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Quality & Transparency</h3>
+                        <p class="text-gray-700">Deliver only premium petroleum products with clear information for every transaction.</p>
                     </div>
-                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Long-Term Partnerships</h3>
-                        <p class="text-gray-600">Cultivate trusted relationships with clients and suppliers worldwide.</p>
+                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Long-Term Partnerships</h3>
+                        <p class="text-gray-700">Cultivate trusted relationships with clients and suppliers worldwide.</p>
                     </div>
-                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Sustainability</h3>
-                        <p class="text-gray-600">Embed eco-friendly practices and innovate for a greener future.</p>
+                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Sustainability</h3>
+                        <p class="text-gray-700">Embed eco-friendly practices and innovate for a greener future.</p>
                     </div>
-                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Innovation & Support</h3>
-                        <p class="text-gray-600">Provide expert support and embrace technology to enhance efficiency.</p>
+                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovation & Support</h3>
+                        <p class="text-gray-700">Provide expert support and embrace technology to enhance efficiency.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="overview" class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6">
+        <section id="overview" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6 max-w-6xl">
                 <h2 class="section-title">Corporate Overview</h2>
-                <div class="max-w-5xl mx-auto mb-16">
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        Chairman, Kim Jeong-han, has successfully led numerous petroleum transactions as a partner and chairman of Gems Havil.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8 text-lg font-medium">
+                
+                <div class="bg-white p-10 rounded-2xl shadow-md mb-16 border border-gray-100">
+                    <p class="text-xl text-blue-800 font-bold mb-6">Chairman, Kim Jeong-han, has successfully led numerous petroleum transactions as a partner and chairman of Gems Havil.</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
                         <li>Founded in 2018, Changsung Korea is headquartered in Seoul, South Korea</li>
                         <li>Specializes in global oil trading and eco-friendly enterprises</li>
                         <li>Provides high-quality petroleum products at competitive prices</li>
                         <li>Builds strong partnerships across continents</li>
                     </ul>
-                    
-                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4 border-b pb-2">Management</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
-                        <li>Legal Counsel – contract & legal review</li>
-                        <li>Global Marketing Director – international sales & supply contracts</li>
-                        <li>Finance & Risk Management Director – trade finance & risk management</li>
-                        <li>Technology & Research Director – product quality & innovation management</li>
-                    </ul>
+
+                    <h3 class="text-2xl font-extrabold text-gray-900 mt-10 mb-6 border-b-2 border-gray-100 pb-2">Management</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 text-lg">
+                        <p><strong>• Legal Counsel</strong> – contract & legal review</p>
+                        <p><strong>• Global Marketing Director</strong> – international sales & supply contracts</p>
+                        <p><strong>• Finance & Risk Management Director</strong> – trade finance & risk management</p>
+                        <p><strong>• Technology & Research Director</strong> – product quality & innovation management</p>
+                    </div>
                 </div>
 
-                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-10">History & Achievements</h3>
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center max-w-6xl mx-auto">
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2018</h4>
-                        <p class="text-sm text-gray-600 font-medium">Company founded & R&D initiatives launched</p>
+                <h3 class="text-3xl font-extrabold text-center text-gray-900 mb-10">History & Achievements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2018</h4>
+                        <p class="text-sm font-medium">Company founded & R&D initiatives launched</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2020</h4>
-                        <p class="text-sm text-gray-600 font-medium">Supplied over 10 million barrels of ESPO crude</p>
+                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2020</h4>
+                        <p class="text-sm font-medium">Supplied over 10 million barrels of ESPO crude</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2022</h4>
-                        <p class="text-sm text-gray-600 font-medium">Forged new partnerships & expanded projects</p>
+                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2022</h4>
+                        <p class="text-sm font-medium">Forged new partnerships & expanded projects</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2024</h4>
-                        <p class="text-sm text-gray-600 font-medium">Collaborated with refineries in Kazakhstan and Azerbaijan</p>
+                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2024</h4>
+                        <p class="text-sm font-medium">Collaborated with refineries in Kazakhstan and Azerbaijan</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2026</h4>
-                        <p class="text-sm text-gray-600 font-medium">Enhanced sustainable management & green vision</p>
+                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2026</h4>
+                        <p class="text-sm font-medium">Enhanced sustainable management & green vision</p>
                     </div>
                 </div>
                 
-                <div class="mt-12 text-center bg-blue-50 py-6 rounded-xl border border-blue-100">
-                    <h4 class="text-xl font-bold text-gray-800 mb-2">Track Record Highlights</h4>
-                    <p class="text-gray-700">Completed 6 deals since 2018 | Delivered 10 million barrels of ESPO crude to China in 2020 | Signed supply agreements with refineries in Kazakhstan and Azerbaijan</p>
+                <div class="mt-12 text-center bg-gray-200 py-8 rounded-2xl">
+                    <h4 class="text-2xl font-extrabold text-blue-900 mb-4">Track Record Highlights</h4>
+                    <p class="text-gray-800 text-lg font-bold">Completed 6 deals since 2018 | Delivered 10 million barrels of ESPO crude to China in 2020 | Signed supply agreements with refineries in Kazakhstan and Azerbaijan</p>
                 </div>
             </div>
         </section>
 
-        <section id="business" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
+        <section id="business" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
                 <h2 class="section-title">Core Business Pillars</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Crude Oil Trading</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+                    <div class="border-2 border-gray-100 p-8 rounded-2xl hover:shadow-xl transition-shadow bg-gray-50">
+                        <h3 class="text-3xl font-black text-blue-800 mb-4">Crude Oil Trading</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
                             Leveraging strong networks with global oil-producing nations to secure high-quality crude at competitive terms, ensuring timely and stable delivery to designated refineries.
                         </p>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Petroleum Products</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                    <div class="border-2 border-gray-100 p-8 rounded-2xl hover:shadow-xl transition-shadow bg-gray-50">
+                        <h3 class="text-3xl font-black text-blue-800 mb-4">Petroleum Products</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
                             Optimizing the distribution of refined products—such as gasoline, diesel, and aviation fuel—by capitalizing on global supply-demand imbalances via the most efficient routes.
                         </p>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Logistics & Bunkering</h3>
-                        <p class="text-gray-700 leading-relaxed">
+                    <div class="border-2 border-gray-100 p-8 rounded-2xl hover:shadow-xl transition-shadow bg-gray-50">
+                        <h3 class="text-3xl font-black text-blue-800 mb-4">Logistics & Bunkering</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
                             Operating comprehensive offshore bunkering services and large-scale terminal storage to maximize supply chain flexibility and structurally hedge against price volatility.
                         </p>
                     </div>
                 </div>
 
-                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-10">Product Portfolio</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">Diesel & D2</h4>
-                        <p class="text-gray-600">EN590 10ppm<br>D2 GOST 305-82</p>
+                <h3 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Product Portfolio</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Diesel & D2</h4>
+                        <p class="text-gray-600 text-lg font-bold">EN590 10ppm<br>D2 GOST 305-82</p>
                     </div>
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">Jet Fuel</h4>
-                        <p class="text-gray-600">Jet A1</p>
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Jet Fuel</h4>
+                        <p class="text-gray-600 text-lg font-bold">Jet A1</p>
                     </div>
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">Gasoline</h4>
-                        <p class="text-gray-600">92N<br>95N</p>
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Gasoline</h4>
+                        <p class="text-gray-600 text-lg font-bold">92N<br>95N</p>
                     </div>
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">LPG & LNG</h4>
-                        <p class="text-gray-600">Liquefied Petroleum Gas<br>Liquefied Natural Gas</p>
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">LPG & LNG</h4>
+                        <p class="text-gray-600 text-lg font-bold">Liquefied Petroleum Gas<br>Liquefied Natural Gas</p>
                     </div>
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">Aromatics</h4>
-                        <p class="text-gray-600">Naphtha<br>Benzene</p>
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Aromatics</h4>
+                        <p class="text-gray-600 text-lg font-bold">Naphtha<br>Benzene</p>
                     </div>
-                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
-                        <h4 class="text-xl font-bold text-blue-700 mb-2">Crude Oil & VLSFO</h4>
-                        <p class="text-gray-600">Crude Oil<br>VLSFO·CST180</p>
+                    <div class="p-8 border-l-8 border-blue-600 bg-gray-50 rounded-r-xl shadow-sm">
+                        <h4 class="text-2xl font-black text-gray-900 mb-2">Crude Oil & VLSFO</h4>
+                        <p class="text-gray-600 text-lg font-bold">Crude Oil<br>VLSFO·CST180</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="network" class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title">Global Network & Partners</h2>
-                <p class="text-center text-xl text-gray-700 mb-12 font-medium">We maintain close partnerships with leading refineries and financial institutions worldwide.</p>
+        <section id="network" class="py-24 bg-slate-900 text-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-6 tracking-tight">Global Network & Partners</h2>
+                <p class="text-center text-xl text-gray-300 mb-16 font-medium">We maintain close partnerships with leading refineries and financial institutions worldwide.</p>
                 
-                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-200 max-w-5xl mx-auto mb-16">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Major Strategic Partner: GEMS HABIL</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-900 p-10 rounded-2xl shadow-2xl mb-16">
+                    <h3 class="text-3xl font-black text-blue-800 mb-8 border-b-2 border-gray-200 pb-4">Major Strategic Partner: GEMS HABIL</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
                         <div>
-                            <p class="font-bold text-gray-800">Established</p>
-                            <p class="text-gray-600 mb-4">Founded in 2010 – offices in Singapore, Malaysia & Sri Lanka</p>
-                            <p class="font-bold text-gray-800">Market Position</p>
-                            <p class="text-gray-600 mb-4">Trades over 30 million tonnes of petroleum products annually</p>
-                            <p class="font-bold text-gray-800">Supply Licence</p>
-                            <p class="text-gray-600">Obtained licence to supply Sri Lanka Petroleum Corporation</p>
+                            <p class="font-extrabold text-gray-900">Established</p>
+                            <p class="text-gray-700 mb-6">Founded in 2010 – offices in Singapore, Malaysia & Sri Lanka</p>
+                            <p class="font-extrabold text-gray-900">Market Position</p>
+                            <p class="text-gray-700 mb-6">Trades over 30 million tonnes of petroleum products annually</p>
+                            <p class="font-extrabold text-gray-900">Supply Licence</p>
+                            <p class="text-gray-700">Obtained licence to supply Sri Lanka Petroleum Corporation</p>
                         </div>
                         <div>
-                            <p class="font-bold text-gray-800">Core Value</p>
-                            <p class="text-gray-600 mb-4">Customer-first – delivers the highest quality products at the most economic prices</p>
-                            <p class="font-bold text-gray-800">Growing Together</p>
-                            <p class="text-gray-600">GEMS HABIL is Changsung Korea’s strategic partner; through rich experience and a global network, it guarantees stable supply and competitive pricing.</p>
+                            <p class="font-extrabold text-gray-900">Core Value</p>
+                            <p class="text-gray-700 mb-6">Customer-first – delivers the highest quality products at the most economic prices</p>
+                            <p class="font-extrabold text-gray-900">Growing Together</p>
+                            <p class="text-gray-700 bg-gray-100 p-4 rounded-lg">GEMS HABIL is Changsung Korea’s strategic partner; through rich experience and a global network, it guarantees stable supply and competitive pricing.</p>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-8">Global Network</h3>
-                <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-16">
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">North & South America: USA, Latin America</span>
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Hong Kong & Macau: Asia Pacific</span>
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Singapore & Malaysia: Southeast Asia</span>
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Africa: Ghana, Nigeria, etc.</span>
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Europe: Norway, Russia</span>
-                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Middle East: Dubai</span>
+                <div class="mb-20">
+                    <h3 class="text-3xl font-extrabold text-center text-yellow-400 mb-8">Global Network</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">North & South America: USA, Latin America</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Hong Kong & Macau: Asia Pacific</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Singapore & Malaysia: Southeast Asia</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Africa: Ghana, Nigeria, etc.</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Europe: Norway, Russia</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Middle East: Dubai</span>
+                    </div>
                 </div>
 
-                <div class="max-w-4xl mx-auto">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Competitive Advantages & Growth</h3>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-gray-700 list-disc list-inside">
+                <div>
+                    <h3 class="text-3xl font-extrabold text-white mb-8 border-l-4 border-yellow-400 pl-4">Competitive Advantages & Growth</h3>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-gray-300 text-lg list-disc list-inside">
                         <li>Extensive global network & logistics platform</li>
                         <li>Strong partnerships & reliable financing</li>
                         <li>Experienced leadership & skilled teams</li>
@@ -264,54 +260,53 @@
             </div>
         </section>
 
-        <section id="team" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
+        <section id="team" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-7xl">
                 <h2 class="section-title">Executive Team</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">Jeong-Han Kim</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">Chairman</p>
-                        <p class="text-gray-600 text-sm">Former partner at GEMS HABIL with strong reliability and financial expertise</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
+                        <h4 class="text-2xl font-black text-gray-900">Jeong-Han Kim</h4>
+                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Chairman</p>
+                        <p class="text-gray-600">Former partner at GEMS HABIL with strong reliability and financial expertise</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">Yoon-Sik Park</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">Vice Chairman</p>
-                        <p class="text-gray-600 text-sm">Over 30 years in commodity trading; extensive network of refineries</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
+                        <h4 class="text-2xl font-black text-gray-900">Yoon-Sik Park</h4>
+                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Vice Chairman</p>
+                        <p class="text-gray-600">Over 30 years in commodity trading; extensive network of refineries</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">Eun-Jae Lee</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">Senior Executive Vice President</p>
-                        <p class="text-gray-600 text-sm">Over 20 years managing overseas relations with POSCO & KEPCO; collaborated with Asian governments</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
+                        <h4 class="text-2xl font-black text-gray-900">Eun-Jae Lee</h4>
+                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Senior Executive Vice President</p>
+                        <p class="text-gray-600">Over 20 years managing overseas relations with POSCO & KEPCO; collaborated with Asian governments</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">Jeong-Woo Kwon</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">Head of Operations</p>
-                        <p class="text-gray-600 text-sm">Managed shipping operations for LG Oil in Vladivostok for 10 years</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">Jeong-Woo Kwon</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">Head of Operations</p>
+                        <p class="text-gray-600">Managed shipping operations for LG Oil in Vladivostok for 10 years</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">David Kim</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">Finance & Business Development</p>
-                        <p class="text-gray-600 text-sm">More than 25 years in credit & capital raising; leads strategic global planning</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">David Kim</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">Finance & Business Development</p>
+                        <p class="text-gray-600">More than 25 years in credit & capital raising; leads strategic global planning</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
-                        <h4 class="text-xl font-bold text-gray-900">Ellen Cho</h4>
-                        <p class="text-blue-700 font-bold text-sm mb-3">International Marketing</p>
-                        <p class="text-gray-600 text-sm">Leads global sales & marketing</p>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">Ellen Cho</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">International Marketing</p>
+                        <p class="text-gray-600">Leads global sales & marketing</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-blue-900 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-extrabold mb-8">Sustainability & Future</h2>
-                <div class="max-w-3xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20">
-                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">Sustainability Strategy</h3>
-                    <ul class="text-lg space-y-4 text-left inline-block">
-                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> Meet energy needs reliably and economically</li>
-                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> Make eco-friendly operations a core pillar of management</li>
-                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> 79% of energy executives view sustainability as a major concern</li>
-                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> 47% have pledged net-zero goals</li>
+        <section class="py-24 bg-blue-800 text-white">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-10 tracking-tight">Sustainability Strategy</h2>
+                <div class="bg-white/10 p-10 rounded-3xl backdrop-blur-md border border-white/20 text-left inline-block w-full">
+                    <ul class="text-xl md:text-2xl font-bold space-y-6 text-blue-50">
+                        <li class="flex items-start"><span class="mr-4 text-yellow-400">✔</span> Meet energy needs reliably and economically</li>
+                        <li class="flex items-start"><span class="mr-4 text-yellow-400">✔</span> Make eco-friendly operations a core pillar of management</li>
+                        <li class="flex items-start"><span class="mr-4 text-yellow-400">✔</span> 79% of energy executives view sustainability as a major concern</li>
+                        <li class="flex items-start"><span class="mr-4 text-yellow-400">✔</span> 47% have pledged net-zero goals</li>
                     </ul>
                 </div>
             </div>
@@ -319,25 +314,26 @@
 
     </main>
 
-    <footer id="contact" class="bg-gray-900 text-white border-t-8 border-gray-800">
-        <div class="container mx-auto px-6 py-16 text-center md:text-left">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <footer id="contact" class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-20 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div>
-                    <h3 class="text-3xl font-extrabold mb-4 text-blue-400">Towards a Shared Future</h3>
-                    <p class="text-gray-400 leading-relaxed text-lg max-w-lg mx-auto md:mx-0">
+                    <h3 class="text-4xl font-black mb-6 text-blue-400 tracking-tight">Towards a Shared Future</h3>
+                    <p class="text-gray-400 leading-relaxed text-xl max-w-lg mx-auto md:mx-0">
                         Changsung Korea supports customers’ success through dependable supply and innovative solutions. With strategic partnerships and an experienced team, we pursue sustainable growth in the global energy market.
                     </p>
                 </div>
                 <div class="md:text-right">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <p class="text-gray-300 mb-2">World Trade Center, 33F</p>
-                    <p class="text-gray-300 mb-6">511 Yeongdong-daero, Gangnam-gu, Seoul</p>
-                    <p><a href="mailto:info@changsungkorea.com" class="text-blue-400 hover:text-white transition-colors text-lg">info@changsungkorea.com</a></p>
-                    <p><a href="mailto:solda119@naver.com" class="text-blue-400 hover:text-white transition-colors text-lg">solda119@naver.com</a></p>
+                    <h3 class="text-3xl font-bold mb-8 text-white">Contact Information</h3>
+                    <p class="text-gray-300 text-xl mb-2 font-medium">World Trade Center, 33F</p>
+                    <p class="text-gray-300 text-xl mb-8 font-medium">511 Yeongdong-daero, Gangnam-gu, Seoul</p>
+                    <p class="mb-3"><a href="mailto:info@changsungkorea.com" class="text-blue-400 hover:text-white transition-colors text-2xl font-bold">info@changsungkorea.com</a></p>
+                    <p><a href="mailto:solda119@naver.com" class="text-blue-400 hover:text-white transition-colors text-2xl font-bold">solda119@naver.com</a></p>
                 </div>
             </div>
-            <div class="mt-16 pt-8 border-t border-gray-800 text-center">
-                <p class="text-xl font-bold text-gray-500">Together we build a sustainable energy future</p>
+            <div class="mt-20 pt-8 border-t border-gray-800 text-center">
+                <p class="text-2xl font-black text-gray-500 tracking-widest uppercase">Together we build a sustainable energy future</p>
+                <p class="mt-4 text-gray-600">&copy; 2026 CHANGSUNG KOREA CO., LTD. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
