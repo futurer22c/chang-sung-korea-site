@@ -29,10 +29,13 @@
             scroll-behavior: smooth;
         }
 
-        /* 3. 메인 타이틀(H1) 및 섹션 제목(.section-title)에만 동일 색상 그림자 효과 적용 */
-        h1,
-        .section-title {
-            text-shadow: 1.5px 1.5px 2px currentcolor; 
+        /* 3. 옅고 자연스러운 그림자 효과 적용 */
+        main p, main h3, main h4, main ul, main li, main strong, footer p, footer ul, footer li {
+            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15); 
+        }
+
+        h1, .section-title, footer h3 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
         }
 
         /* 공통 스타일 */
@@ -208,7 +211,7 @@
 
         <section id="network" class="py-24 bg-slate-900 text-white">
             <div class="container mx-auto px-6 max-w-6xl">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-center text-white mb-6 tracking-tight" style="text-shadow: 1.5px 1.5px 2px currentcolor;">Global Network & Partners</h2>
+                <h2 class="section-title text-white">Global Network & Partners</h2>
                 <p class="text-center text-xl text-gray-300 mb-16 font-medium">We maintain close partnerships with leading refineries and financial institutions worldwide.</p>
                 
                 <div class="bg-white text-gray-900 p-10 rounded-2xl shadow-2xl mb-16">
@@ -234,12 +237,12 @@
                 <div class="mb-20">
                     <h3 class="text-3xl font-extrabold text-center text-yellow-400 mb-8">Global Network</h3>
                     <div class="flex flex-wrap justify-center gap-4">
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">North & South America: USA, Latin America</span>
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Hong Kong & Macau: Asia Pacific</span>
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg"> Singapore & Malaysia: Southeast Asia</span>
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Africa: Ghana, Nigeria, etc.</span>
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Europe: Norway, Russia</span>
-                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg">Middle East: Dubai</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">North & South America: USA, Latin America</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">Hong Kong & Macau: Asia Pacific</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">Singapore & Malaysia: Southeast Asia</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">Africa: Ghana, Nigeria, etc.</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">Europe: Norway, Russia</span>
+                        <span class="bg-blue-800 border border-blue-600 px-6 py-3 rounded-full font-bold text-lg text-white">Middle East: Dubai</span>
                     </div>
                 </div>
 
@@ -265,11 +268,14 @@
             <div class="container mx-auto px-6 max-w-7xl">
                 <h2 class="section-title">Executive Team</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    
                     <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
+                        <img src="images/chairman.png" alt="Chairman Jeong-Han Kim" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-sm border-2 border-gray-100">
                         <h4 class="text-2xl font-black text-gray-900">Jeong-Han Kim</h4>
                         <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Chairman</p>
                         <p class="text-gray-600">Former partner at GEMS HABIL with strong reliability and financial expertise</p>
                     </div>
+
                     <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
                         <h4 class="text-2xl font-black text-gray-900">Yoon-Sik Park</h4>
                         <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Vice Chairman</p>
@@ -301,7 +307,7 @@
 
         <section class="py-24 bg-blue-800 text-white">
             <div class="container mx-auto px-6 text-center max-w-4xl">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-10 tracking-tight" style="text-shadow: 1.5px 1.5px 2px currentcolor;">Sustainability Strategy</h2>
+                <h2 class="section-title text-white">Sustainability Strategy</h2>
                 <div class="bg-white/10 p-10 rounded-3xl backdrop-blur-md border border-white/20 text-left inline-block w-full">
                     <ul class="text-xl md:text-2xl font-bold space-y-6 text-blue-50">
                         <li class="flex items-start"><span class="mr-4 text-yellow-400">✔</span> Meet energy needs reliably and economically</li>
@@ -319,7 +325,7 @@
         <div class="container mx-auto px-6 py-20 text-center md:text-left">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div>
-                    <h3 class="text-4xl font-black mb-6 text-blue-400 tracking-tight" style="text-shadow: 1.5px 1.5px 2px currentcolor;">Towards a Shared Future</h3>
+                    <h3 class="text-4xl font-black mb-6 text-blue-400 tracking-tight">Towards a Shared Future</h3>
                     <p class="text-gray-400 leading-relaxed text-xl max-w-lg mx-auto md:mx-0">
                         Changsung Korea supports customers’ success through dependable supply and innovative solutions. With strategic partnerships and an experienced team, we pursue sustainable growth in the global energy market.
                     </p>
