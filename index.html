@@ -33,12 +33,11 @@
         }
 
         /* 3. 우측 아래로 텍스트 색상과 동일한 그림자 생성 */
-        /* currentColor를 사용하여 글씨 색상에 맞춰 그림자 색상이 자동으로 변합니다. */
         h1, h2, h3, h4, a { text-shadow: 2px 2px 3px currentcolor; }
-
+        
         /* 공통 섹션 스타일 */
-        .section-title { @apply text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-6 tracking-tight; }
-        .section-subtitle { @apply text-center text-gray-500 mb-16 max-w-3xl mx-auto text-lg leading-relaxed; }
+        .section-title { @apply text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-8 tracking-tight; }
+        .section-subtitle { @apply text-center text-blue-600 font-bold mb-12 max-w-3xl mx-auto text-xl; }
         .nav-link { @apply text-gray-600 hover:text-blue-600 transition-colors duration-300 font-bold tracking-wide; }
     </style>
 </head>
@@ -50,156 +49,295 @@
                 <img src="images/logo.png" alt="Changsung Korea Logo" class="h-14 mr-3">
                 CHANGSUNG KOREA
             </a>
-            <div class="hidden md:flex space-x-10">
-                <a href="#overview" class="nav-link">Corporate Overview</a>
-                <a href="#business" class="nav-link">Business Pillars</a>
-                <a href="#leadership" class="nav-link">Leadership</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#business" class="nav-link">Business</a>
+                <a href="#network" class="nav-link">Network</a>
+                <a href="#team" class="nav-link">Team</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
+        <section class="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
             <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60">
                 <source src="images/hero-video.mp4" type="video/mp4">
             </video>
             
             <div class="relative z-20 px-4">
+                <p class="text-xl md:text-2xl mb-2 font-bold tracking-widest text-blue-300">CHANGSUNG KOREA CO., LTD</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-                    Global Energy Partner & <br>Eco-Friendly Innovator
+                    Global Oil Trading & <br>Eco-Friendly Innovation
                 </h1>
-                <p class="text-xl md:text-2xl max-w-4xl mx-auto font-medium opacity-90">
-                    Delivering sustainable value through global oil trading and innovative energy solutions.
+                <p class="text-2xl mb-6 font-bold text-yellow-400">Energy Connecting The World</p>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto font-medium opacity-90 leading-relaxed">
+                    CHANGSUNG KOREA is committed to global trade to supply the highest quality petroleum products at the most competitive prices.
                 </p>
             </div>
         </section>
 
-        <section id="overview" class="py-24 bg-white">
+        <section id="mission" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">OUR MISSION</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Quality & Transparency</h3>
+                        <p class="text-gray-600">Deliver only premium petroleum products with clear information for every transaction.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Long-Term Partnerships</h3>
+                        <p class="text-gray-600">Cultivate trusted relationships with clients and suppliers worldwide.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Sustainability</h3>
+                        <p class="text-gray-600">Embed eco-friendly practices and innovate for a greener future.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Innovation & Support</h3>
+                        <p class="text-gray-600">Provide expert support and embrace technology to enhance efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">Corporate Overview</h2>
-                <p class="section-subtitle">A trusted leader in the global energy market, connecting resources to where they are needed most.</p>
-                
-                <div class="max-w-5xl mx-auto bg-gray-50 rounded-2xl p-10 shadow-lg border border-gray-100">
-                    <p class="text-lg leading-loose text-center text-gray-700 mb-8">
-                        Established in 2018, CHANGSUNG KOREA CO., LTD. has rapidly grown into a specialized global oil trading and eco-friendly enterprise. Based in Seoul, South Korea, we secure highly competitive petroleum products through robust global networks and supply them efficiently to international markets. Our commitment to transparency, quality, and sustainable practices drives our vision to build long-term partnerships worldwide.
+                <div class="max-w-5xl mx-auto mb-16">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Chairman, Kim Jeong-han, has successfully led numerous petroleum transactions as a partner and chairman of Gems Havil.
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-12 border-t border-gray-200 pt-10">
-                        <div>
-                            <h3 class="text-2xl font-bold text-blue-800 mb-2">Global Network</h3>
-                            <p class="text-gray-600">Connecting major refineries with global demand efficiently.</p>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-blue-800 mb-2">Competitive Pricing</h3>
-                            <p class="text-gray-600">Securing the best market terms through strategic sourcing.</p>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-blue-800 mb-2">Sustainability</h3>
-                            <p class="text-gray-600">Pioneering eco-friendly solutions for the future energy market.</p>
-                        </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8 text-lg font-medium">
+                        <li>Founded in 2018, Changsung Korea is headquartered in Seoul, South Korea</li>
+                        <li>Specializes in global oil trading and eco-friendly enterprises</li>
+                        <li>Provides high-quality petroleum products at competitive prices</li>
+                        <li>Builds strong partnerships across continents</li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4 border-b pb-2">Management</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                        <li>Legal Counsel – contract & legal review</li>
+                        <li>Global Marketing Director – international sales & supply contracts</li>
+                        <li>Finance & Risk Management Director – trade finance & risk management</li>
+                        <li>Technology & Research Director – product quality & innovation management</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-10">History & Achievements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2018</h4>
+                        <p class="text-sm text-gray-600 font-medium">Company founded & R&D initiatives launched</p>
                     </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2020</h4>
+                        <p class="text-sm text-gray-600 font-medium">Supplied over 10 million barrels of ESPO crude</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2022</h4>
+                        <p class="text-sm text-gray-600 font-medium">Forged new partnerships & expanded projects</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2024</h4>
+                        <p class="text-sm text-gray-600 font-medium">Collaborated with refineries in Kazakhstan and Azerbaijan</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-2">2026</h4>
+                        <p class="text-sm text-gray-600 font-medium">Enhanced sustainable management & green vision</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center bg-blue-50 py-6 rounded-xl border border-blue-100">
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Track Record Highlights</h4>
+                    <p class="text-gray-700">Completed 6 deals since 2018 | Delivered 10 million barrels of ESPO crude to China in 2020 | Signed supply agreements with refineries in Kazakhstan and Azerbaijan</p>
                 </div>
             </div>
         </section>
 
-        <section id="business" class="py-24 bg-slate-50">
+        <section id="business" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">Core Business Pillars</h2>
-                <p class="section-subtitle">Optimizing the global supply chain across crude oil, petroleum products, and logistics.</p>
                 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                    <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-blue-600">
-                        <div class="text-blue-600 text-4xl mb-6">🛢️</div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Crude Oil Trading</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            We leverage deep relationships with oil-producing nations to secure a stable supply of high-quality crude oil. Our strategic trading ensures consistent delivery to designated global refineries under the most optimal terms.
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Crude Oil Trading</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Leveraging strong networks with global oil-producing nations to secure high-quality crude at competitive terms, ensuring timely and stable delivery to designated refineries.
                         </p>
                     </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-blue-600">
-                        <div class="text-blue-600 text-4xl mb-6">⛽</div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Petroleum Products</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            We specialize in the efficient distribution of refined petrochemical products. By capitalizing on regional supply and demand imbalances, we supply key products via optimized logistics channels globally.
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Petroleum Products</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Optimizing the distribution of refined products—such as gasoline, diesel, and aviation fuel—by capitalizing on global supply-demand imbalances via the most efficient routes.
                         </p>
                     </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-blue-600">
-                        <div class="text-blue-600 text-4xl mb-6">🚢</div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Logistics & Bunkering</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Our integrated logistics network includes comprehensive offshore bunkering and large-scale terminal storage operations, designed to maximize supply chain flexibility and structurally mitigate market volatility.
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-gray-800">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Logistics & Bunkering</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Operating comprehensive offshore bunkering services and large-scale terminal storage to maximize supply chain flexibility and structurally hedge against price volatility.
                         </p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-10">Product Portfolio</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">Diesel & D2</h4>
+                        <p class="text-gray-600">EN590 10ppm<br>D2 GOST 305-82</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">Jet Fuel</h4>
+                        <p class="text-gray-600">Jet A1</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">Gasoline</h4>
+                        <p class="text-gray-600">92N<br>95N</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">LPG & LNG</h4>
+                        <p class="text-gray-600">Liquefied Petroleum Gas<br>Liquefied Natural Gas</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">Aromatics</h4>
+                        <p class="text-gray-600">Naphtha<br>Benzene</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-100 rounded-lg text-center">
+                        <h4 class="text-xl font-bold text-blue-700 mb-2">Crude Oil & VLSFO</h4>
+                        <p class="text-gray-600">Crude Oil<br>VLSFO·CST180</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="leadership" class="py-24 bg-white">
+        <section id="network" class="py-20 bg-slate-50">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">Leadership Team</h2>
-                <p class="section-subtitle">Guided by decades of expertise in global commodities and finance.</p>
+                <h2 class="section-title">Global Network & Partners</h2>
+                <p class="text-center text-xl text-gray-700 mb-12 font-medium">We maintain close partnerships with leading refineries and financial institutions worldwide.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 justify-center max-w-6xl mx-auto mt-12">
-                    <div class="text-center group">
-                        <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:scale-105 transition-transform duration-300">
-                            <img src="images/team-chairman.png" alt="Jeong-Han Kim" class="w-full h-full object-cover">
+                <div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-200 max-w-5xl mx-auto mb-16">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">Major Strategic Partner: GEMS HABIL</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="font-bold text-gray-800">Established</p>
+                            <p class="text-gray-600 mb-4">Founded in 2010 – offices in Singapore, Malaysia & Sri Lanka</p>
+                            <p class="font-bold text-gray-800">Market Position</p>
+                            <p class="text-gray-600 mb-4">Trades over 30 million tonnes of petroleum products annually</p>
+                            <p class="font-bold text-gray-800">Supply Licence</p>
+                            <p class="text-gray-600">Obtained licence to supply Sri Lanka Petroleum Corporation</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-900">Jeong-Han Kim</h4>
-                        <p class="text-blue-700 font-bold uppercase tracking-wider text-sm mt-1 mb-4">Chairman</p>
-                        <p class="text-gray-600 px-4">Leads the corporate vision with extensive expertise across the financial and energy sectors, driving sustainable growth and innovation.</p>
-                    </div>
-                    
-                    <div class="text-center group">
-                        <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:scale-105 transition-transform duration-300">
-                            <img src="images/team-vicechairman.png" alt="Yoon-Sik Park" class="w-full h-full object-cover bg-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800">Core Value</p>
+                            <p class="text-gray-600 mb-4">Customer-first – delivers the highest quality products at the most economic prices</p>
+                            <p class="font-bold text-gray-800">Growing Together</p>
+                            <p class="text-gray-600">GEMS HABIL is Changsung Korea’s strategic partner; through rich experience and a global network, it guarantees stable supply and competitive pricing.</p>
                         </div>
-                        <h4 class="text-2xl font-bold text-gray-900">Yoon-Sik Park</h4>
-                        <p class="text-blue-700 font-bold uppercase tracking-wider text-sm mt-1 mb-4">Vice Chairman</p>
-                        <p class="text-gray-600 px-4">Brings over 30 years of global commodity trading experience and manages an extensive international network of refineries.</p>
-                    </div>
-
-                    <div class="text-center group">
-                        <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:scale-105 transition-transform duration-300">
-                            <img src="images/team-svp.png" alt="Eun-Jae Lee" class="w-full h-full object-cover bg-gray-200">
-                        </div>
-                        <h4 class="text-2xl font-bold text-gray-900">Eun-Jae Lee</h4>
-                        <p class="text-blue-700 font-bold uppercase tracking-wider text-sm mt-1 mb-4">Senior Executive Vice President</p>
-                        <p class="text-gray-600 px-4">Directs global partnerships and overseas operations, drawing on decades of experience with top-tier multinational corporations.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer id="contact" class="bg-slate-900 text-white border-t-4 border-blue-600">
-        <div class="container mx-auto px-6 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-                <div>
-                    <img src="images/logo-white.png" alt="Changsung Korea Logo" class="h-12 mb-6 opacity-90">
-                    <p class="text-gray-400 leading-relaxed mb-6 text-lg">
-                        Building a foundation for mutual success.<br>We empower our partners through dependable supply and innovative solutions in the global energy market.
-                    </p>
+                <h3 class="text-3xl font-extrabold text-center text-gray-800 mb-8">Global Network</h3>
+                <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-16">
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">North & South America: USA, Latin America</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Hong Kong & Macau: Asia Pacific</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Singapore & Malaysia: Southeast Asia</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Africa: Ghana, Nigeria, etc.</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Europe: Norway, Russia</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-bold shadow-sm">Middle East: Dubai</span>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Headquarters</h3>
-                    <ul class="space-y-5 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="mr-4 text-xl mt-1">🏢</span>
-                            <span class="leading-relaxed">World Trade Center, 33F<br>511 Yeongdong-daero, Gangnam-gu, Seoul, Republic of Korea</span>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="mr-4 text-xl">✉️</span>
-                            <a href="mailto:info@changsungkorea.com" class="hover:text-blue-400 transition-colors">info@changsungkorea.com</a>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="mr-4 text-xl">✉️</span>
-                            <a href="mailto:solda119@naver.com" class="hover:text-blue-400 transition-colors">solda119@naver.com</a>
-                        </li>
+
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Competitive Advantages & Growth</h3>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-gray-700 list-disc list-inside">
+                        <li>Extensive global network & logistics platform</li>
+                        <li>Strong partnerships & reliable financing</li>
+                        <li>Experienced leadership & skilled teams</li>
+                        <li>Comprehensive portfolio of products</li>
+                        <li>Commitment to sustainability & ESG</li>
+                        <li>Adoption of AI, IoT & innovation for efficiency</li>
+                        <li>Expand into high-growth emerging markets</li>
+                        <li>Invest in renewable and cleaner energy projects</li>
+                        <li>Enhance logistics & infrastructure capabilities</li>
+                        <li>Forge strategic alliances & joint ventures</li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-16 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p>&copy; 2026 CHANGSUNG KOREA CO., LTD. All Rights Reserved.</p>
-                <p class="mt-4 md:mt-0 font-medium">Sustainable Energy for Tomorrow</p>
+        </section>
+
+        <section id="team" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Executive Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">Jeong-Han Kim</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">Chairman</p>
+                        <p class="text-gray-600 text-sm">Former partner at GEMS HABIL with strong reliability and financial expertise</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">Yoon-Sik Park</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">Vice Chairman</p>
+                        <p class="text-gray-600 text-sm">Over 30 years in commodity trading; extensive network of refineries</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">Eun-Jae Lee</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">Senior Executive Vice President</p>
+                        <p class="text-gray-600 text-sm">Over 20 years managing overseas relations with POSCO & KEPCO; collaborated with Asian governments</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">Jeong-Woo Kwon</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">Head of Operations</p>
+                        <p class="text-gray-600 text-sm">Managed shipping operations for LG Oil in Vladivostok for 10 years</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">David Kim</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">Finance & Business Development</p>
+                        <p class="text-gray-600 text-sm">More than 25 years in credit & capital raising; leads strategic global planning</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold text-gray-900">Ellen Cho</h4>
+                        <p class="text-blue-700 font-bold text-sm mb-3">International Marketing</p>
+                        <p class="text-gray-600 text-sm">Leads global sales & marketing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-blue-900 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-extrabold mb-8">Sustainability & Future</h2>
+                <div class="max-w-3xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20">
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">Sustainability Strategy</h3>
+                    <ul class="text-lg space-y-4 text-left inline-block">
+                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> Meet energy needs reliably and economically</li>
+                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> Make eco-friendly operations a core pillar of management</li>
+                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> 79% of energy executives view sustainability as a major concern</li>
+                        <li class="flex items-center"><span class="mr-3 text-2xl">•</span> 47% have pledged net-zero goals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white border-t-8 border-gray-800">
+        <div class="container mx-auto px-6 py-16 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-extrabold mb-4 text-blue-400">Towards a Shared Future</h3>
+                    <p class="text-gray-400 leading-relaxed text-lg max-w-lg mx-auto md:mx-0">
+                        Changsung Korea supports customers’ success through dependable supply and innovative solutions. With strategic partnerships and an experienced team, we pursue sustainable growth in the global energy market.
+                    </p>
+                </div>
+                <div class="md:text-right">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <p class="text-gray-300 mb-2">World Trade Center, 33F</p>
+                    <p class="text-gray-300 mb-6">511 Yeongdong-daero, Gangnam-gu, Seoul</p>
+                    <p><a href="mailto:info@changsungkorea.com" class="text-blue-400 hover:text-white transition-colors text-lg">info@changsungkorea.com</a></p>
+                    <p><a href="mailto:solda119@naver.com" class="text-blue-400 hover:text-white transition-colors text-lg">solda119@naver.com</a></p>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center">
+                <p class="text-xl font-bold text-gray-500">Together we build a sustainable energy future</p>
             </div>
         </div>
     </footer>
