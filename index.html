@@ -11,10 +11,10 @@
     <meta property="og:description" content="Global Oil Trading & Eco-Friendly Innovation. Energy Connecting The World.">
     <meta property="og:image" content="https://www.changsungkorea.com/images/hero-bg.jpg">
     <meta property="og:url" content="https://www.changsungkorea.com">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 3. Aptos 폰트 설정 */
+        /* 2. Aptos 폰트 설정 */
         @font-face {
             font-family: 'Aptos';
             src: url('fonts/Aptos-Regular.ttf') format('truetype');
@@ -36,12 +36,10 @@
             scroll-behavior: smooth;
         }
 
-        /* 4. 자연스러운 그림자 효과 조절 */
-        /* 일반 본문: 아주 옅게 */
+        /* 3. 자연스러운 그림자 효과 */
         main p, main h3, main h4, main ul, main li, main strong, footer p, footer ul, footer li {
             text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15); 
         }
-        /* 제목: 조금 더 또렷하게 */
         h1, .section-title, footer h3 {
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
         }
@@ -71,7 +69,6 @@
     <main>
         <section class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
             <img src="images/hero-bg.jpg" alt="" onerror="this.style.display='none'" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60">
-            
             <div class="relative z-20 px-4">
                 <p class="text-xl md:text-2xl mb-3 font-bold tracking-widest text-blue-300">CHANGSUNG KOREA CO., LTD</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
@@ -146,26 +143,6 @@
             </div>
         </section>
 
-        <section id="business" class="py-24 bg-white">
-            <div class="container mx-auto px-6 max-w-7xl">
-                <h2 class="section-title">Core Business Pillars</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                    <div class="border-2 border-gray-100 p-8 rounded-2xl bg-gray-50">
-                        <h3 class="text-3xl font-black text-blue-800 mb-4">Crude Oil Trading</h3>
-                        <p class="text-gray-700 text-lg">Securing high-quality crude at competitive terms via global producer networks.</p>
-                    </div>
-                    <div class="border-2 border-gray-100 p-8 rounded-2xl bg-gray-50">
-                        <h3 class="text-3xl font-black text-blue-800 mb-4">Petroleum Products</h3>
-                        <p class="text-gray-700 text-lg">Optimizing distribution of refined products like gasoline and jet fuel.</p>
-                    </div>
-                    <div class="border-2 border-gray-100 p-8 rounded-2xl bg-gray-50">
-                        <h3 class="text-3xl font-black text-blue-800 mb-4">Logistics</h3>
-                        <p class="text-gray-700 text-lg">Offshore bunkering and terminal storage for supply chain flexibility.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="team" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6 max-w-7xl">
                 <h2 class="section-title">Executive Team</h2>
@@ -174,17 +151,32 @@
                         <img src="images/chairman.png" alt="Chairman" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-sm border-2 border-gray-100" onerror="this.style.display='none'">
                         <h4 class="text-2xl font-black text-gray-900">Jeong-Han Kim</h4>
                         <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Chairman</p>
-                        <p class="text-gray-600">Expert in global oil transactions and financial partnerships.</p>
+                        <p class="text-gray-600">Former partner at GEMS HABIL with strong reliability and financial expertise.</p>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
                         <h4 class="text-2xl font-black text-gray-900">Yoon-Sik Park</h4>
                         <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Vice Chairman</p>
-                        <p class="text-gray-600">30+ years in commodity trading and refinery networks.</p>
+                        <p class="text-gray-600">Over 30 years in commodity trading; extensive network of refineries.</p>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
                         <h4 class="text-2xl font-black text-gray-900">Eun-Jae Lee</h4>
-                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">SEVP</p>
-                        <p class="text-gray-600">Global relations expert with POSCO & KEPCO experience.</p>
+                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Senior Executive VP</p>
+                        <p class="text-gray-600">Over 20 years managing overseas relations with POSCO & KEPCO.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">Jeong-Woo Kwon</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">Head of Operations</p>
+                        <p class="text-gray-600">Managed shipping operations for LG Oil in Vladivostok for 10 years.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">David Kim</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">Finance & Business Dev</p>
+                        <p class="text-gray-600">25+ years in credit & capital raising; leads strategic global planning.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-gray-400">
+                        <h4 class="text-2xl font-black text-gray-900">Ellen Cho</h4>
+                        <p class="text-gray-500 font-extrabold text-lg my-2 uppercase tracking-wider">International Marketing</p>
+                        <p class="text-gray-600">Leads global sales & marketing initiatives.</p>
                     </div>
                 </div>
             </div>
@@ -199,7 +191,7 @@
                     <p class="text-gray-400 text-xl max-w-lg mx-auto md:mx-0">Sustainable growth in the global energy market through dependable supply.</p>
                 </div>
                 <div class="md:text-right">
-                    <h3 class="text-3xl font-bold mb-8">Contact</h3>
+                    <h3 class="text-3xl font-bold mb-8">Contact Information</h3>
                     <p class="text-gray-300 text-xl font-medium">World Trade Center 33F, Gangnam, Seoul</p>
                     <p class="mt-4"><a href="mailto:info@changsungkorea.com" class="text-blue-400 text-2xl font-bold">info@changsungkorea.com</a></p>
                 </div>
@@ -209,6 +201,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
