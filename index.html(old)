@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGSUNG KOREA CO., LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles besides default Tailwind CSS */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 mb-12 max-w-2xl mx-auto;
+        }
+        .nav-link {
+            @apply text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center text-2xl font-bold text-blue-700">
+                <img src="images/기업로고3_투명배경.png" alt="Changsung Korea Logo" class="h-16 mr-3">
+                <!-- <span>CHANGSUNG KOREA</span> -->
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#products" class="nav-link">Our Business</a>
+                <a href="#team" class="nav-link">Our Team</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ▼▼▼ HERO SECTION (완전히 새로 작성됨) ▼▼▼ -->
+        <section class="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
+            
+            <!-- 동영상 배경 -->
+            <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="images/기업영상.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- 반투명 오버레이 -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+
+            <!-- 텍스트 콘텐츠 -->
+            <div class="relative z-20 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Global Oil Trading and<br>Eco-friendly Enterprises</h1>
+                <p class="text-lg md:text-xl max-w-3xl">Delivering the highest quality petroleum products at the most competitive prices, we are building a sustainable future.</p>
+            </div>
+
+        </section>
+        <!-- ▲▲▲ HERO SECTION 끝 ▲▲▲ -->
+
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center font-extrabold">About Chungsung Korea</h2>
+                <div class="max-w-4xl mx-auto text-lg text-center leading-relaxed">
+                    <p>Established in 2018, Chungsung Korea was born to meet the demands of the ever-changing global energy market. Building on the successful partnership and experience of GEMS HABIL, Chungsung Korea was founded under the leadership of Chairman Kim Jung-han. We are constantly researching and developing to pioneer new markets and meet differentiated customer expectations through close cooperation with global oil refineries. Our goal is to go beyond simply supplying petroleum products and to grow together with our customers based on innovative solutions and trust.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center font-bold">Our Core Business</h2>
+                <p class="section-subtitle text-center">We reliably supply a variety of high-quality petrochemical products to the global market.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">EAST SIBERIAN PACIFIC OCEAN CRUDE OIL (ESPO)</h3>
+                        <p class="text-gray-600">High-quality crude oil supplied through the East Siberian-Pacific Ocean pipeline.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">EN590 GAS OIL 10PPM</h3>
+                        <p class="text-gray-600">An ultra-low sulfur gas oil that meets European standards and is environmentally friendly.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">RUSSIAN LIGHT CYCLE OIL (LCO)</h3>
+                        <p class="text-gray-600">A light cycle oil used in various industrial sectors.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">DIESEL D2 (GOST 305-82)</h3>
+                        <p class="text-gray-600">A widely used standard diesel fuel.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">RUSSIAN EXPORT BLEND CRUDE OIL (REBCO)</h3>
+                        <p class="text-gray-600">Russia's representative export blend crude oil.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">MAZUT M100</h3>
+                        <p class="text-gray-600">A heavy fuel oil used for power plants and ship fuel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center font-bold">Our Executive Team</h2>
+                <p class="section-subtitle text-center">Top experts in each field have gathered to lead Chungsung Korea's success.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                    <div class="text-center p-6">
+                        <img class="w-128 h-128 rounded-full mx-auto mb-4 shadow-md object-cover" src="images/CEO.png" alt="Chairman Kim Jung-han">
+                        <h4 class="text-xl font-bold text-gray-800">Kim Jung-han</h4>
+                        <p class="text-blue-600 font-medium">Chairman</p>
+                        <p class="text-sm mt-2">Leads the company with deep insight and experience across the financial and energy industries.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <img class="w-128 h-128 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=Y.S.+Park" alt="Deputy Vice Chairman Y.S. Park">
+                        <h4 class="text-xl font-bold text-gray-800">Park Yoon-sik</h4>
+                        <p class="text-blue-600 font-medium">Deputy Vice Chairman</p>
+                        <p class="text-sm mt-2">An expert with over 30 years of logistics experience and a network of international oil refineries.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <img class="w-128 h-128 rounded-full mx-auto mb-4 shadow-md" src="https://placehold.co/200x200/64748b/e2e8f0?text=E.J.+Lee" alt="Deputy Senior Vice President E.J. Lee">
+                        <h4 class="text-xl font-bold text-gray-800">Lee Eun-jae</h4>
+                        <p class="text-blue-600 font-medium">Deputy Senior Vice President</p>
+                        <p class="text-sm mt-2">Manages global partnerships with over 20 years of overseas business experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center font-bold">Our Global Partners</h2>
+                <p class="section-subtitle text-center">The world's leading companies are with Chungsung Korea.</p>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                    <img src='images/Atyrau%20Oil%20Refinery%20LLP%20(ANPZ%20LLP).png' alt="Atyrau Oil Refinery LLP Logo" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
+                    <img src='images/Tengizchevroil%20LLP%20(TCO).png' alt="Tengizchevroil LLP Logo" class="h-12 opacity-60 hover:opacity-100 transition-opacity">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CHANGSUNG KOREA CO., LTD</h3>
+                    <p class="text-gray-400">Building a foundation for the success<br>of both sellers and buyers.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="mr-2">✉️</span>
+                            <a href="info@changsungkorea.com" class="hover:text-blue-400">info@changsungkorea.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 CHANGSUNG KOREA CO., LTD. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
