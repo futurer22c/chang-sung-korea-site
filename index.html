@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHANGSUNG KOREA CO., LTD - Investor Relations</title>
     
-    <meta name="description" content="CHANGSUNG KOREA CO., LTD - Global Oil Trading & Eco-Friendly Innovation. 창성코리아 글로벌 석유 무역 및 친환경 혁신 기업.">
-    <meta name="keywords" content="창성코리아, CHANGSUNG KOREA, Oil Trading, 석유 무역, 친환경 에너지, GEMS HABIL, 김정한 사장">
+    <meta name="description" content="CHANGSUNG KOREA CO., LTD - Global Oil Trading & Eco-Friendly Innovation.">
+    <meta name="keywords" content="창성코리아, CHANGSUNG KOREA, Oil Trading, 석유 무역, 친환경 에너지, 김정한 사장">
     <meta property="og:title" content="CHANGSUNG KOREA CO., LTD">
     <meta property="og:description" content="Global Oil Trading & Eco-Friendly Innovation. Energy Connecting The World.">
     <meta property="og:image" content="https://www.changsungkorea.com/images/hero-bg.jpg">
@@ -14,7 +14,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 2. Aptos 폰트 설정 */
+        /* 2. 폰트 설정 */
         @font-face {
             font-family: 'Aptos';
             src: url('fonts/Aptos-Regular.ttf') format('truetype');
@@ -36,12 +36,12 @@
             scroll-behavior: smooth;
         }
 
-        /* 3. 자연스러운 그림자 효과 */
+        /* 3. 그림자 및 유리 효과 */
         main p, main h3, main h4, main ul, main li, main strong, footer p, footer ul, footer li {
-            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15); 
+            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); 
         }
-        h1, .section-title, footer h3 {
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+        h1, .section-title, footer h3, .message-title {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
         }
 
         .section-title { @apply text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-10 tracking-tight; }
@@ -70,10 +70,8 @@
         <section class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden bg-slate-900">
             <img src="images/hero-bg.jpg" alt="" onerror="this.style.display='none'" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-60">
             <div class="relative z-20 px-4">
-                <p class="text-xl md:text-2xl mb-3 font-bold tracking-widest text-blue-300">CHANGSUNG KOREA CO., LTD</p>
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-                    Global Oil Trading & <br>Eco-Friendly Innovation
-                </h1>
+                <p class="text-xl md:text-2xl mb-3 font-bold tracking-widest text-blue-300 uppercase">CHANGSUNG KOREA CO., LTD</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">Global Oil Trading & <br>Eco-Friendly Innovation</h1>
                 <p class="text-2xl mb-8 font-bold text-yellow-400 tracking-wide">Energy Connecting The World</p>
                 <p class="text-lg md:text-xl max-w-4xl mx-auto font-medium opacity-95 leading-relaxed bg-black/30 p-4 rounded-lg shadow-sm">
                     CHANGSUNG KOREA is committed to global trade to supply the highest quality petroleum products at the most competitive prices.
@@ -81,23 +79,61 @@
             </div>
         </section>
 
-        <section id="mission" class="py-24 bg-white">
+        <section id="chairman-msg" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="flex flex-col md:flex-row items-stretch gap-0 rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100">
+                    <div class="md:w-1/3 bg-slate-50 p-10 flex flex-col items-center justify-center border-r border-gray-100">
+                        <img src="images/chairman.png" alt="Chairman" class="w-full max-w-[260px] rounded-2xl shadow-lg mb-8 object-cover aspect-[3/4] border-4 border-white" onerror="this.style.display='none'">
+                        <div class="text-center">
+                            <h3 class="text-3xl font-black text-gray-900 mb-1">Jeong-Han Kim</h3>
+                            <p class="text-blue-700 font-extrabold text-lg uppercase tracking-widest">Chairman & CEO</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 bg-white p-12 flex flex-col justify-center relative">
+                        <div class="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+                            <img src="images/network-map.png" alt="" class="w-64" onerror="this.style.display='none'">
+                        </div>
+                        
+                        <h2 class="message-title text-3xl md:text-4xl font-black text-blue-900 mb-6 leading-tight">
+                            Energy Connecting The World,<br>Innovation that Sustains
+                        </h2>
+                        <p class="text-xl font-bold text-blue-800 mb-2">세상을 연결하는 에너지, 미래를 지속하는 혁신</p>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-10">
+                            "창성코리아는 전 세계 에너지 무역을 품질과 투명성으로 관리하며, 동시에 친환경 혁신을 주도하고 있습니다. 글로벌 자원 전문성과 지속 가능한 기술의 융합을 통해, 우리는 다음 세대를 위한 탄력적이고 연결된 세상을 만들어가고 있습니다."
+                        </p>
+                        <div class="flex flex-col items-end">
+                            <p class="text-2xl font-black text-gray-900 italic mb-1">Jeong-Han Kim</p>
+                            <p class="text-sm text-gray-500 font-bold uppercase tracking-widest">Chairman, CHANGSUNG KOREA</p>
+                        </div>
+                        <div class="mt-12 pt-8 border-t border-gray-100">
+                            <div class="bg-slate-50 p-6 rounded-xl border-l-8 border-yellow-400">
+                                <p class="text-xl font-bold text-gray-800 text-center">
+                                    "대륙을 넘어 신뢰 받는, 지속 가능한 미래를 위한 최적의 파트너"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="py-24 bg-slate-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">OUR MISSION</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-t-4 border-blue-700">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Quality & Transparency</h3>
                         <p class="text-gray-700">Deliver only premium petroleum products with clear information for every transaction.</p>
                     </div>
-                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-t-4 border-blue-700">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Long-Term Partnerships</h3>
                         <p class="text-gray-700">Cultivate trusted relationships with clients and suppliers worldwide.</p>
                     </div>
-                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-t-4 border-blue-700">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Sustainability</h3>
                         <p class="text-gray-700">Embed eco-friendly practices and innovate for a greener future.</p>
                     </div>
-                    <div class="p-8 bg-blue-50/50 rounded-2xl shadow-sm border-t-4 border-blue-700">
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-t-4 border-blue-700">
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovation & Support</h3>
                         <p class="text-gray-700">Provide expert support and embrace technology to enhance efficiency.</p>
                     </div>
@@ -105,54 +141,10 @@
             </div>
         </section>
 
-        <section id="overview" class="py-24 bg-slate-50">
-            <div class="container mx-auto px-6 max-w-6xl">
-                <h2 class="section-title">Corporate Overview</h2>
-                <div class="bg-white p-10 rounded-2xl shadow-md mb-16 border border-gray-100">
-                    <p class="text-xl text-blue-800 font-bold mb-6">Chairman, Kim Jeong-han, has successfully led numerous petroleum transactions as a partner and chairman of Gems Havil.</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
-                        <li>Founded in 2018, Changsung Korea is headquartered in Seoul, South Korea</li>
-                        <li>Specializes in global oil trading and eco-friendly enterprises</li>
-                        <li>Provides high-quality petroleum products at competitive prices</li>
-                        <li>Builds strong partnerships across continents</li>
-                    </ul>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
-                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2018</h4>
-                        <p class="text-sm">Company founded</p>
-                    </div>
-                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2020</h4>
-                        <p class="text-sm">10M barrels supplied</p>
-                    </div>
-                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2022</h4>
-                        <p class="text-sm">Partnership expanded</p>
-                    </div>
-                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2024</h4>
-                        <p class="text-sm">Global refinery network</p>
-                    </div>
-                    <div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg">
-                        <h4 class="text-3xl font-black mb-2 text-yellow-400">2026</h4>
-                        <p class="text-sm">Green Vision 2026</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="team" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6 max-w-7xl">
-                <h2 class="section-title">Executive Team</h2>
+                <h2 class="section-title">Professional Leadership</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                    <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
-                        <img src="images/chairman.png" alt="Chairman" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-sm border-2 border-gray-100" onerror="this.style.display='none'">
-                        <h4 class="text-2xl font-black text-gray-900">Jeong-Han Kim</h4>
-                        <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Chairman</p>
-                        <p class="text-gray-600">Former partner at GEMS HABIL with strong reliability and financial expertise.</p>
-                    </div>
                     <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-8 border-blue-800">
                         <h4 class="text-2xl font-black text-gray-900">Yoon-Sik Park</h4>
                         <p class="text-blue-700 font-extrabold text-lg my-2 uppercase tracking-wider">Vice Chairman</p>
