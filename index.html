@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHANGSUNG KOREA - 2026 Corporate Investor Relations</title>
+  <style>
+    :root {
+      --nav-h: 76px;
+      --max: 1240px;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-2: #eef3f9;
+      --ink: #0c1624;
+      --muted: #5f7083;
+      --line: #dbe5f0;
+      --navy: #08111d;
+      --navy-2: #0e1f36;
+      --blue: #1d6fd8;
+      --blue-2: #44a1ff;
+      --mint: #6fd0b9;
+      --gold: #d9b56d;
+      --shadow: 0 18px 60px rgba(8, 17, 29, 0.12);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.7;
+    }
+
+    .section {
+      padding: 110px 0;
+    }
+    .section-head {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+    .section-head p {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(16px, 1.7vw, 19px);
+    }
+
+    /* Header */
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--nav-h);
+      z-index: 50;
+      background: linear-gradient(to bottom, rgba(4, 11, 21, 0.45), rgba(4, 11, 21, 0.12));
+      backdrop-filter: blur(14px);
+      transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      border-bottom: 1px solid transparent;
+    }
+    .site-header.scrolled {
+      background: rgba(255,255,255,0.9);
+      border-bottom-color: rgba(12,22,36,0.08);
+      box-shadow: 0 10px 36px rgba(12,22,36,0.08);
+    }
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: conic-gradient(from 220deg, var(--blue), var(--blue-2), var(--mint), var(--blue));
+      box-shadow: inset 0 0 0 3px rgba(255,255,255,0.25);
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.75);
+    }
+    .site-header.scrolled .brand,
+    .site-header.scrolled .nav a,
+    .site-header.scrolled .ghost-btn {
+      color: var(--ink);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: rgba(255,255,255,0.9);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .nav a {
+      position: relative;
+      transition: color 0.25s ease, opacity 0.25s ease;
+    }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 2px;
+      background: currentColor;
+      opacity: 0;
+      transform: scaleX(0.5);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .nav a:hover::after,
+    .nav a.active::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--blue), var(--blue-2));
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(29,111,216,0.24);
+    }
+    .btn.secondary {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.16);
+      color: #fff;
+    }
+    .ghost-btn {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+    }
+    .site-header.scrolled .ghost-btn,
+    .site-header.scrolled .btn.secondary {
+      background: rgba(12,22,36,0.02);
+      border-color: rgba(12,22,36,0.10);
+    }
+    .mobile-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.04);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      overflow: clip;
+      color: #fff;
+      background:
+        radial-gradient(circle at 16% 22%, rgba(68,161,255,0.20), transparent 28%),
+        radial-gradient(circle at 86% 14%, rgba(111,208,185,0.16), transparent 24%),
+        radial-gradient(circle at 72% 75%, rgba(29,111,216,0.24), transparent 28%),
+        linear-gradient(140deg, #06101c 0%, #0b1a2f 48%, #102544 100%);
+    }
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(42px);
+      pointer-events: none;
+      opacity: 0.8;
+      animation: floatOrb 12s ease-in-out infinite alternate;
+    }
+    .hero::before {
+      width: 320px;
+      height: 320px;
+      right: -70px;
+      top: 120px;
+      background: rgba(68,161,255,0.16);
+    }
+    .hero::after {
+      width: 240px;
+      height: 240px;
+      left: -60px;
+      bottom: 90px;
+      background: rgba(111,208,185,0.12);
+      animation-duration: 14s;
+    }
+    .hero-grid {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 34px;
+      align-items: center;
+      padding: calc(var(--nav-h) + 44px) 0 64px;
+    }
+    .hero-copy {
+      display: grid;
+      gap: 22px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.04);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(44px, 7vw, 88px);
+      line-height: 0.92;
+      letter-spacing: -0.05em;
+      max-width: 11ch;
+    }
+    .hero h1 span {
+      display: block;
+      color: #9dd3ff;
+    }
+    .hero .subhead {
+      margin: 0;
+      font-size: clamp(18px, 1.8vw, 22px);
+      color: rgba(236,242,248,0.82);
+      max-width: 60ch;
+    }
+    .hero .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hero .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 4px;
+    }
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 760px;
+    }
+    .hero-stat {
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+    }
+    .hero-stat strong {
+      display: block;
+      font-size: clamp(28px, 3.2vw, 40px);
+      margin-bottom: 8px;
+      letter-spacing: -0.04em;
+    }
+    .hero-stat span {
+      display: block;
+      color: rgba(236,242,248,0.72);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+    }
+
+    .hero-panel {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 540px);
+      justify-self: end;
+      display: grid;
+      gap: 16px;
+    }
+    .panel {
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+      box-shadow: 0 24px 70px rgba(0,0,0,0.24);
+      backdrop-filter: blur(16px);
+    }
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(236,242,248,0.82);
+    }
+    .signal {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .signal i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 18px rgba(111,208,185,0.7);
+    }
+    .panel-body {
+      padding: 22px;
+      display: grid;
+      gap: 16px;
+    }
+    .hero-visual {
+      min-height: 250px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.04)),
+        radial-gradient(circle at 70% 30%, rgba(68,161,255,0.22), transparent 28%),
+        linear-gradient(135deg, rgba(12,25,44,0.95), rgba(18,37,64,0.82));
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 34px 34px;
+      opacity: 0.35;
+    }
+    .hero-visual .label-main {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1;
+    }
+    .hero-visual h3 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      color: #fff;
+    }
+    .hero-visual p {
+      margin: 0;
+      color: rgba(236,242,248,0.74);
+      font-size: 14px;
+      max-width: 36ch;
+    }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .mini-card {
+      padding: 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.05);
+    }
+    .mini-card h4 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+    .mini-card p {
+      margin: 0;
+      color: rgba(236,242,248,0.74);
+      font-size: 14px;
+    }
+    .mini-chart {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+      height: 104px;
+      margin-top: 14px;
+    }
+    .mini-chart b {
+      flex: 1;
+      border-radius: 999px 999px 6px 6px;
+      background: linear-gradient(180deg, var(--blue-2), rgba(68,161,255,0.22));
+      animation: rise 1.2s ease both;
+    }
+
+    .metric-strip {
+      position: relative;
+      margin-top: -52px;
+      z-index: 3;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      padding: 18px;
+      border-radius: 30px;
+      background: #fff;
+      border: 1px solid rgba(12,22,36,0.06);
+      box-shadow: var(--shadow);
+    }
+    .metric {
+      min-height: 124px;
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #f9fbfe, #f1f6fc);
+      border: 1px solid #e3ebf5;
+    }
+    .metric .label {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #617182;
+      margin-bottom: 14px;
+    }
+    .metric strong {
+      display: block;
+      font-size: clamp(26px, 3vw, 38px);
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+    .metric span {
+      display: block;
+      color: #617182;
+      font-size: 14px;
+    }
+
+    /* Cards & grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 20px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-pad { padding: 28px; }
+
+    .overview-main {
+      display: grid;
+      gap: 22px;
+      min-height: 560px;
+      background: linear-gradient(180deg, #0b182c, #132845);
+      color: #fff;
+      position: relative;
+    }
+    .overview-main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 80% 16%, rgba(68,161,255,0.22), transparent 24%),
+        linear-gradient(180deg, rgba(4,11,21,0.06), rgba(4,11,21,0.30));
+      pointer-events: none;
+    }
+    .overview-stack {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 18px;
+      align-content: end;
+      min-height: 100%;
+      padding: 30px;
+    }
+    .overview-main h3 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+      max-width: 12ch;
+    }
+    .overview-main p {
+      margin: 0;
+      max-width: 60ch;
+      color: rgba(236,242,248,0.76);
+      font-size: 17px;
+    }
+    .overview-taglist {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .overview-taglist span,
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+    .overview-side {
+      display: grid;
+      gap: 14px;
+      padding: 22px;
+      background: linear-gradient(180deg, #ffffff, #f7fbff);
+    }
+    .side-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 16px;
+      border-radius: 20px;
+      background: #fff;
+      border: 1px solid #e5edf6;
+    }
+    .side-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #eff6ff;
+      border: 1px solid #d6e5f9;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--blue);
+      flex: 0 0 auto;
+    }
+    .side-copy h4 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+    .side-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .mission-grid,
+    .biz-grid,
+    .leaders-grid,
+    .sustain-grid {
+      display: grid;
+      gap: 18px;
+    }
+    .mission-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .biz-grid,
+    .leaders-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .sustain-grid { grid-template-columns: 1fr 1fr; }
+
+    .mission-card,
+    .biz-card,
+    .leader-card,
+    .sustain-card,
+    .portfolio-card,
+    .contact-card,
+    .track-card,
+    .growth-card,
+    .partner-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .mission-card .mark,
+    .biz-card .mark,
+    .leader-card .mark {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, #edf5ff, #e4f0ff);
+      border: 1px solid #d7e6f8;
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+    .mission-card h3,
+    .biz-card h3,
+    .leader-card h3,
+    .portfolio-card h3,
+    .contact-card h3,
+    .track-card h3,
+    .growth-card h3,
+    .partner-card h3,
+    .sustain-card h3 {
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+    .mission-card h3,
+    .biz-card h3,
+    .leader-card h3 { font-size: 28px; }
+    .mission-card p,
+    .biz-card p,
+    .leader-card p,
+    .sustain-card p,
+    .portfolio-card p,
+    .contact-card p,
+    .track-card p,
+    .growth-card p,
+    .partner-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .time-card {
+      padding: 20px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #ffffff, #f8fbfe);
+      border: 1px solid #e0e9f3;
+      box-shadow: 0 10px 30px rgba(8,17,29,0.06);
+    }
+    .time-card strong {
+      display: block;
+      font-size: 30px;
+      letter-spacing: -0.04em;
+      color: var(--navy-2);
+      margin-bottom: 10px;
+    }
+    .time-card span {
+      display: block;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .time-card.highlight {
+      background: linear-gradient(180deg, #0d1f36, #152c4b);
+      border-color: rgba(255,255,255,0.06);
+    }
+    .time-card.highlight strong,
+    .time-card.highlight span { color: #fff; }
+
+    .biz-list,
+    .partner-list,
+    .track-list,
+    .growth-list,
+    .contact-list {
+      display: grid;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .biz-list div,
+    .partner-list div,
+    .track-list div,
+    .growth-list div,
+    .contact-list div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #f7fbff;
+      border: 1px solid #e3ecf6;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0f2036;
+    }
+    .biz-list small,
+    .partner-list small,
+    .track-list small,
+    .growth-list small,
+    .contact-list small {
+      color: #6a8197;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .partner-shell,
+    .network-shell,
+    .cta-shell {
+      border-radius: 34px;
+      overflow: hidden;
+      box-shadow: 0 28px 80px rgba(6,17,33,0.20);
+    }
+    .partner-shell,
+    .network-shell {
+      background: linear-gradient(180deg, #0a1627, #11213b);
+      color: #fff;
+    }
+    .partner-grid,
+    .network-grid,
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1.06fr 0.94fr;
+    }
+    .partner-main,
+    .network-map,
+    .cta-main {
+      padding: 32px;
+    }
+    .partner-main,
+    .cta-main {
+      display: grid;
+      gap: 16px;
+      align-content: center;
+    }
+    .partner-main h3,
+    .cta-main h3,
+    .network-info h3 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+    .partner-main p,
+    .cta-main p,
+    .network-info p {
+      margin: 0;
+      color: rgba(236,242,248,0.76);
+      font-size: 16px;
+      max-width: 58ch;
+    }
+    .partner-side,
+    .network-info,
+    .cta-side {
+      padding: 32px;
+      border-left: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.04));
+      display: grid;
+      gap: 14px;
+      align-content: center;
+    }
+    .partner-box,
+    .network-box {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .partner-box h4,
+    .network-box h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #fff;
+      letter-spacing: -0.03em;
+    }
+    .partner-box p,
+    .network-box p {
+      margin: 0;
+      color: rgba(236,242,248,0.72);
+      font-size: 14px;
+    }
+
+    .world {
+      position: relative;
+      min-height: 500px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      overflow: hidden;
+    }
+    .world::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.34;
+    }
+    .continent {
+      position: absolute;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(90,143,208,0.45), rgba(63,102,151,0.26));
+      opacity: 0.76;
+    }
+    .c1 { left: 8%; top: 18%; width: 24%; height: 18%; transform: rotate(-12deg); }
+    .c2 { left: 24%; top: 43%; width: 14%; height: 20%; transform: rotate(10deg); }
+    .c3 { left: 39%; top: 20%; width: 16%; height: 10%; transform: rotate(-8deg); }
+    .c4 { left: 46%; top: 30%; width: 22%; height: 26%; transform: rotate(4deg); }
+    .c5 { left: 63%; top: 18%; width: 23%; height: 18%; transform: rotate(9deg); }
+    .c6 { left: 73%; top: 47%; width: 12%; height: 9%; transform: rotate(-8deg); }
+    .node {
+      position: absolute;
+      display: grid;
+      gap: 6px;
+      justify-items: start;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 0 8px rgba(111,208,185,0.12), 0 0 28px rgba(111,208,185,0.46);
+      animation: pulse 2.6s ease infinite;
+    }
+    .node-label {
+      white-space: nowrap;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(4,11,21,0.74);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .route {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(111,208,185,0), rgba(111,208,185,0.9), rgba(111,208,185,0));
+      transform-origin: left center;
+      opacity: 0.74;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .portfolio-list {
+      display: grid;
+      gap: 10px;
+    }
+    .portfolio-list div {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #f7fbff;
+      border: 1px solid #e3ecf6;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .portfolio-list small {
+      color: #698096;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .leader-role {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #edf5ff;
+      color: var(--blue);
+      border: 1px solid #d8e6f8;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+    .leader-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+    .leader-tags span {
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: #f4f8fc;
+      border: 1px solid #e2ebf4;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #4d6278;
+    }
+
+    .track-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .track-card,
+    .growth-card {
+      min-height: 100%;
+    }
+
+    .sustain-card {
+      min-height: 100%;
+      background: linear-gradient(180deg, #ffffff, #f8fbfe);
+    }
+    .sustain-number {
+      display: block;
+      font-size: 40px;
+      letter-spacing: -0.05em;
+      color: var(--navy-2);
+      font-weight: 800;
+    }
+
+    .cta-shell {
+      background: linear-gradient(180deg, #0a1627, #11213b);
+      color: #fff;
+    }
+    .cta-side {
+      display: grid;
+      gap: 14px;
+    }
+    .contact-list div {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #fff;
+    }
+    .contact-list small { color: #9eb1c4; }
+    .download-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 8px;
+    }
+
+    .footer {
+      padding: 34px 0 60px;
+      background: #09131f;
+      color: rgba(236,242,248,0.72);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: end;
+    }
+    .footer h4 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+    .footer p { margin: 0; }
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      will-change: opacity, transform;
+    }
+    .fade-up.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.85; }
+    }
+    @keyframes floatOrb {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(12px, -18px, 0); }
+    }
+    @keyframes rise {
+      from { transform: scaleY(0.2); opacity: 0.4; }
+      to { transform: scaleY(1); opacity: 1; }
+    }
+
+    @media (max-width: 1180px) {
+      .hero-grid,
+      .grid-2,
+      .partner-grid,
+      .network-grid,
+      .cta-grid,
+      .footer-grid,
+      .track-wrap,
+      .sustain-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-panel { justify-self: stretch; width: 100%; }
+      .partner-side,
+      .network-info,
+      .cta-side { border-left: 0; border-top: 1px solid rgba(255,255,255,0.08); }
+      .footer-links { justify-content: flex-start; }
+    }
+    @media (max-width: 1024px) {
+      .mission-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .biz-grid,
+      .leaders-grid,
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
+      .hero-metrics,
+      .metric-grid,
+      .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 760px) {
+      :root { --nav-h: 70px; }
+      .nav,
+      .header-actions .ghost-btn,
+      .header-actions .btn.primary { display: none; }
+      .mobile-toggle { display: inline-grid; place-items: center; }
+      .mobile-menu {
+        position: fixed;
+        inset: var(--nav-h) 12px auto 12px;
+        z-index: 45;
+        padding: 14px;
+        border-radius: 24px;
+        background: rgba(255,255,255,0.97);
+        border: 1px solid rgba(12,22,36,0.08);
+        box-shadow: 0 20px 60px rgba(12,22,36,0.14);
+      }
+      .mobile-menu.open { display: grid; }
+      .mobile-menu a {
+        padding: 14px 12px;
+        border-radius: 16px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .mobile-menu a:hover { background: #f2f7fd; }
+      .hero-copy,
+      .panel-body,
+      .overview-stack,
+      .partner-main,
+      .partner-side,
+      .network-map,
+      .network-info,
+      .cta-main,
+      .cta-side,
+      .card-pad,
+      .mission-card,
+      .biz-card,
+      .leader-card,
+      .portfolio-card,
+      .contact-card,
+      .track-card,
+      .growth-card,
+      .partner-card,
+      .sustain-card { padding: 22px; }
+      .hero h1 { max-width: none; }
+      .hero-metrics,
+      .metric-grid,
+      .mission-grid,
+      .biz-grid,
+      .leaders-grid,
+      .portfolio-grid,
+      .timeline,
+      .sustain-grid { grid-template-columns: 1fr; }
+      .section { padding: 84px 0; }
+      .metric-strip { margin-top: -34px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .fade-up { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="CHANGSUNG KOREA home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>CHANGSUNG KOREA</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mission">Mission</a>
+        <a href="#business">Business</a>
+        <a href="#network">Network</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn ghost-btn" href="#contact">Contact</a>
+        <a class="btn primary" href="https://drive.google.com/file/d/1jOv1VPibtE6pg48h9J7A6U_49nfygDRV/view" target="_blank" rel="noopener noreferrer">IR Download</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">≡</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#overview">Overview</a>
+    <a href="#mission">Mission</a>
+    <a href="#business">Business</a>
+    <a href="#network">Network</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-up">
+          <div class="hero-kicker">2026 Corporate Investor Relations</div>
+          <h1>Global Oil Trading <span>& Eco-Friendly Innovation</span></h1>
+          <p class="subhead">
+            CHANGSUNG KOREA CO., LTD - May 2026 | Investor Relations Team.
+            Energy Connecting The World through premium petroleum supply, strategic partnerships, and sustainability-oriented growth.
+          </p>
+          <div class="meta">
+            <span>Founded in 2018</span>
+            <span>Seoul, South Korea</span>
+            <span>Global Oil Trading</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#business">View Core Business</a>
+            <a class="btn secondary" href="https://drive.google.com/file/d/1WbownBeBfTq_xx0l9Bp3hRIJMzEwg61W/view" target="_blank" rel="noopener noreferrer">Company Profile PDF</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="hero-stat">
+              <strong>2018</strong>
+              <span>Company founded in Seoul</span>
+            </div>
+            <div class="hero-stat">
+              <strong>10M</strong>
+              <span>Barrels of ESPO crude supplied in 2020</span>
+            </div>
+            <div class="hero-stat">
+              <strong>30M</strong>
+              <span>Tonnes traded annually by GEMS HABIL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel fade-up">
+          <div class="panel">
+            <div class="panel-head">
+              <span>Enterprise snapshot</span>
+              <span class="signal"><i></i> Presentation-ready UI</span>
+            </div>
+            <div class="panel-body">
+              <div class="hero-visual">
+                <div class="label-main">
+                  <h3>Energy Connecting The World</h3>
+                  <p>Structured to feel closer to a major corporate IR homepage while retaining the actual story and factual content from the current IR deck.</p>
+                </div>
+              </div>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <h4>Track Record</h4>
+                  <p>Completed 6 deals since 2018 and signed supply agreements with refineries in Kazakhstan and Azerbaijan.</p>
+                </div>
+                <div class="mini-card">
+                  <h4>Momentum</h4>
+                  <p>Sustainability and growth are moved into visible, boardroom-style narrative modules.</p>
+                  <div class="mini-chart" aria-hidden="true">
+                    <b style="height:52%"></b>
+                    <b style="height:64%"></b>
+                    <b style="height:70%"></b>
+                    <b style="height:88%"></b>
+                    <b style="height:76%"></b>
+                    <b style="height:94%"></b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics -->
+    <section class="metric-strip fade-up">
+      <div class="container">
+        <div class="metric-grid">
+          <div class="metric">
+            <div class="label">Mission</div>
+            <strong>Quality</strong>
+            <span>Deliver only premium petroleum products with clear information for every transaction.</span>
+          </div>
+          <div class="metric">
+            <div class="label">Partnership</div>
+            <strong>Trust</strong>
+            <span>Cultivate long-term relationships with clients and suppliers worldwide.</span>
+          </div>
+          <div class="metric">
+            <div class="label">Sustainability</div>
+            <strong>Future</strong>
+            <span>Embed eco-friendly practices and innovate for a greener future.</span>
+          </div>
+          <div class="metric">
+            <div class="label">Support</div>
+            <strong>Innovation</strong>
+            <span>Provide expert support and embrace technology to enhance efficiency.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Corporate overview</span>
+          <h2>Actual IR deck content, rebuilt as a more institutional homepage</h2>
+          <p>
+            The wording, timeline, business pillars, partner narrative, products, executive team, and contact details below are aligned to the current IR materials.
+            The difference is in hierarchy, interaction, and premium enterprise presentation.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card overview-main fade-up">
+            <div class="overview-stack">
+              <span class="eyebrow" style="color:#9dd3ff">Corporate statement</span>
+              <h3>Energy Connecting The World</h3>
+              <p>
+                CHANGSUNG KOREA is committed to global trade to supply the highest quality petroleum products at the most competitive prices.
+                Chairman, Kim Jeong-han, has successfully led numerous petroleum transactions as a partner and chairman of GEMS HABIL.
+              </p>
+              <div class="overview-taglist">
+                <span>Founded in 2018</span>
+                <span>Headquartered in Seoul</span>
+                <span>Global oil trading</span>
+                <span>Eco-friendly enterprises</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="card overview-side fade-up">
+            <div class="side-item">
+              <div class="side-num">01</div>
+              <div class="side-copy">
+                <h4>High-quality petroleum products</h4>
+                <p>Provides high-quality petroleum products at competitive prices and builds strong partnerships across continents.</p>
+              </div>
+            </div>
+            <div class="side-item">
+              <div class="side-num">02</div>
+              <div class="side-copy">
+                <h4>Management capability</h4>
+                <p>Legal Counsel, Global Marketing Director, Finance & Risk Management Director, and Technology & Research Director.</p>
+              </div>
+            </div>
+            <div class="side-item">
+              <div class="side-num">03</div>
+              <div class="side-copy">
+                <h4>Track record</h4>
+                <p>10 million barrels of ESPO crude delivered to China in 2020 and 6 completed deals since 2018.</p>
+              </div>
+            </div>
+            <div class="side-item">
+              <div class="side-num">04</div>
+              <div class="side-copy">
+                <h4>Growth narrative</h4>
+                <p>Growth, strategic alliances, logistics capability, and sustainability are framed as visible corporate strengths.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="timeline fade-up">
+          <div class="time-card">
+            <strong>2018</strong>
+            <span>Company founded and R&D initiatives launched</span>
+          </div>
+          <div class="time-card">
+            <strong>2020</strong>
+            <span>Supplied over 10 million barrels of ESPO crude</span>
+          </div>
+          <div class="time-card">
+            <strong>2022</strong>
+            <span>Forged new partnerships and expanded projects</span>
+          </div>
+          <div class="time-card">
+            <strong>2024</strong>
+            <span>Collaborated with refineries in Kazakhstan and Azerbaijan</span>
+          </div>
+          <div class="time-card highlight">
+            <strong>2026</strong>
+            <span>Enhanced sustainable management and green vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section" id="mission">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Our mission</span>
+          <h2>Four mission pillars, clarified and given more visual weight</h2>
+          <p>
+            This is the same mission content from the deck, but structured for better scanability and stronger executive tone.
+          </p>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card fade-up">
+            <div class="mark">01</div>
+            <h3>Quality & Transparency</h3>
+            <p>Deliver only premium petroleum products with clear information for every transaction.</p>
+          </article>
+          <article class="mission-card fade-up">
+            <div class="mark">02</div>
+            <h3>Long-Term Partnerships</h3>
+            <p>Cultivate trusted relationships with clients and suppliers worldwide.</p>
+          </article>
+          <article class="mission-card fade-up">
+            <div class="mark">03</div>
+            <h3>Sustainability</h3>
+            <p>Embed eco-friendly practices and innovate for a greener future.</p>
+          </article>
+          <article class="mission-card fade-up">
+            <div class="mark">04</div>
+            <h3>Innovation & Support</h3>
+            <p>Provide expert support and embrace technology to enhance efficiency.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business -->
+    <section class="section" id="business">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Core business pillars</span>
+          <h2>Business architecture repositioned for a larger-company feel</h2>
+          <p>
+            Instead of product brochure cards, the three core business areas are now framed as operating capabilities with strategic value.
+          </p>
+        </div>
+
+        <div class="biz-grid">
+          <article class="biz-card fade-up">
+            <div class="mark">01</div>
+            <h3>Crude Oil Trading</h3>
+            <p>Leveraging strong networks with global oil-producing nations to secure high-quality crude at competitive terms, ensuring timely and stable delivery to designated refineries.</p>
+            <div class="biz-list">
+              <div><span>High-quality crude sourcing</span><small>Supply</small></div>
+              <div><span>Competitive terms</span><small>Commercial</small></div>
+              <div><span>Stable refinery delivery</span><small>Execution</small></div>
+            </div>
+          </article>
+
+          <article class="biz-card fade-up">
+            <div class="mark">02</div>
+            <h3>Petroleum Products</h3>
+            <p>Optimizing the distribution of refined products such as gasoline, diesel, and aviation fuel by capitalizing on global supply-demand imbalances via the most efficient routes.</p>
+            <div class="biz-list">
+              <div><span>Gasoline, diesel, aviation fuel</span><small>Portfolio</small></div>
+              <div><span>Efficient route optimization</span><small>Logistics</small></div>
+              <div><span>Global supply-demand capture</span><small>Value</small></div>
+            </div>
+          </article>
+
+          <article class="biz-card fade-up">
+            <div class="mark">03</div>
+            <h3>Logistics & Bunkering</h3>
+            <p>Operating comprehensive offshore bunkering services and large-scale terminal storage to maximize supply chain flexibility and structurally hedge against price volatility.</p>
+            <div class="biz-list">
+              <div><span>Offshore bunkering services</span><small>Service</small></div>
+              <div><span>Terminal storage capability</span><small>Infrastructure</small></div>
+              <div><span>Price volatility hedge</span><small>Risk</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategic partner -->
+    <section class="section" id="partner">
+      <div class="container">
+        <div class="partner-shell fade-up">
+          <div class="partner-grid">
+            <div class="partner-main">
+              <span class="eyebrow" style="color:#8fd7c5">Major strategic partner</span>
+              <h3>GEMS HABIL</h3>
+              <p>
+                GEMS HABIL is CHANGSUNG KOREA’s strategic partner. Through rich experience and a global network,
+                it supports stable supply and competitive pricing in international petroleum trade.
+              </p>
+              <div class="overview-taglist">
+                <span>Founded in 2010</span>
+                <span>Singapore</span>
+                <span>Malaysia</span>
+                <span>Sri Lanka</span>
+              </div>
+            </div>
+            <div class="partner-side">
+              <div class="partner-box">
+                <h4>Market position</h4>
+                <p>Trades over 30 million tonnes of petroleum products annually.</p>
+              </div>
+              <div class="partner-box">
+                <h4>Supply licence</h4>
+                <p>Obtained licence to supply Sri Lanka Petroleum Corporation.</p>
+              </div>
+              <div class="partner-box">
+                <h4>Core value</h4>
+                <p>Customer-first - delivers the highest quality products at the most economic prices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Product portfolio</span>
+          <h2>Portfolio organized into clear trading categories</h2>
+          <p>
+            The underlying product list from the IR deck is preserved, but grouped into a cleaner grid for better corporate readability.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card fade-up">
+            <h3>Diesel & D2</h3>
+            <div class="portfolio-list">
+              <div><span>EN590 10ppm</span><small>Diesel</small></div>
+              <div><span>D2 GOST 305-82</span><small>Distillate</small></div>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up">
+            <h3>Jet Fuel & Gasoline</h3>
+            <div class="portfolio-list">
+              <div><span>Jet A1</span><small>Aviation</small></div>
+              <div><span>92N</span><small>Gasoline</small></div>
+              <div><span>95N</span><small>Gasoline</small></div>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up">
+            <h3>LPG & LNG</h3>
+            <div class="portfolio-list">
+              <div><span>Liquefied Petroleum Gas</span><small>LPG</small></div>
+              <div><span>Liquefied Natural Gas</span><small>LNG</small></div>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up">
+            <h3>Aromatics</h3>
+            <div class="portfolio-list">
+              <div><span>Naphtha</span><small>Feedstock</small></div>
+              <div><span>Benzene</span><small>Aromatics</small></div>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up">
+            <h3>Crude Oil & VLSFO</h3>
+            <div class="portfolio-list">
+              <div><span>Crude Oil</span><small>Upstream-linked</small></div>
+              <div><span>VLSFO</span><small>Marine fuel</small></div>
+              <div><span>CST180</span><small>Fuel oil</small></div>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up">
+            <h3>Commercial Approach</h3>
+            <p>High-quality product supply, competitive pricing, route efficiency, and stable counterparty relationships remain the central commercial narrative.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global network -->
+    <section class="section" id="network">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow" style="color:#6fd0b9">Global network</span>
+          <h2>Global coverage visualized as an operating platform</h2>
+          <p>
+            The network section is elevated into a hero-grade module so the company feels more global, structured, and strategically distributed.
+          </p>
+        </div>
+
+        <div class="network-shell fade-up">
+          <div class="network-grid">
+            <div class="network-map">
+              <div class="world">
+                <div class="continent c1"></div>
+                <div class="continent c2"></div>
+                <div class="continent c3"></div>
+                <div class="continent c4"></div>
+                <div class="continent c5"></div>
+                <div class="continent c6"></div>
+
+                <div class="route" style="left:16%; top:31%; width:55%; transform:rotate(8deg);"></div>
+                <div class="route" style="left:36%; top:34%; width:33%; transform:rotate(-11deg);"></div>
+                <div class="route" style="left:52%; top:37%; width:22%; transform:rotate(18deg);"></div>
+
+                <div class="node" style="left:14%; top:28%;">
+                  <span class="dot"></span>
+                  <span class="node-label">USA / Latin America</span>
+                </div>
+                <div class="node" style="left:41%; top:30%;">
+                  <span class="dot"></span>
+                  <span class="node-label">Norway / Russia</span>
+                </div>
+                <div class="node" style="left:50%; top:46%;">
+                  <span class="dot"></span>
+                  <span class="node-label">Dubai</span>
+                </div>
+                <div class="node" style="left:68%; top:28%;">
+                  <span class="dot"></span>
+                  <span class="node-label">Hong Kong / Macau</span>
+                </div>
+                <div class="node" style="left:72%; top:40%;">
+                  <span class="dot"></span>
+                  <span class="node-label">Singapore / Malaysia</span>
+                </div>
+                <div class="node" style="left:60%; top:58%;">
+                  <span class="dot"></span>
+                  <span class="node-label">Africa</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="network-info">
+              <div class="network-box">
+                <h4>Regional footprint</h4>
+                <p>North & South America - USA, Latin America / Hong Kong & Macau / Asia Pacific / Singapore & Malaysia / Southeast Asia / Africa / Europe / Middle East.</p>
+              </div>
+              <div class="network-box">
+                <h4>Strategic partners</h4>
+                <p>We maintain close partnerships with leading refineries and financial institutions worldwide.</p>
+              </div>
+              <div class="network-box">
+                <h4>Design intent</h4>
+                <p>This structure can later be upgraded into a true SVG map, hover tooltips, region pages, or deal references without rebuilding the whole layout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Executive team</span>
+          <h2>Leadership cards restructured into cleaner credibility modules</h2>
+          <p>
+            The biographies remain anchored to the deck, but the visual treatment is more restrained and better aligned with institutional IR sites.
+          </p>
+        </div>
+
+        <div class="leaders-grid">
+          <article class="leader-card fade-up">
+            <span class="leader-role">Chairman</span>
+            <h3>Jeong-Han Kim</h3>
+            <p>Former partner at GEMS HABIL with strong reliability and financial expertise.</p>
+            <div class="leader-tags">
+              <span>Leadership</span>
+              <span>Finance</span>
+              <span>Trust</span>
+            </div>
+          </article>
+          <article class="leader-card fade-up">
+            <span class="leader-role">Vice Chairman</span>
+            <h3>Yoon-Sik Park</h3>
+            <p>Over 30 years in commodity trading with an extensive network of refineries.</p>
+            <div class="leader-tags">
+              <span>Trading</span>
+              <span>Network</span>
+              <span>Execution</span>
+            </div>
+          </article>
+          <article class="leader-card fade-up">
+            <span class="leader-role">Senior EVP</span>
+            <h3>Eun-Jae Lee</h3>
+            <p>Over 20 years managing overseas relations with POSCO and KEPCO, collaborating with Asian governments.</p>
+            <div class="leader-tags">
+              <span>Relations</span>
+              <span>Industry</span>
+              <span>Governance</span>
+            </div>
+          </article>
+          <article class="leader-card fade-up">
+            <span class="leader-role">Head of Operations</span>
+            <h3>Jeong-Woo Kwon</h3>
+            <p>Managed shipping operations for LG Oil in Vladivostok for 10 years.</p>
+            <div class="leader-tags">
+              <span>Operations</span>
+              <span>Shipping</span>
+              <span>Procedure</span>
+            </div>
+          </article>
+          <article class="leader-card fade-up">
+            <span class="leader-role">Finance & Business Development</span>
+            <h3>David Kim</h3>
+            <p>More than 25 years in credit and capital raising, leading strategic global planning.</p>
+            <div class="leader-tags">
+              <span>Capital</span>
+              <span>Planning</span>
+              <span>Finance</span>
+            </div>
+          </article>
+          <article class="leader-card fade-up">
+            <span class="leader-role">International Marketing</span>
+            <h3>Ellen Cho</h3>
+            <p>Leads global sales and marketing.</p>
+            <div class="leader-tags">
+              <span>Sales</span>
+              <span>Marketing</span>
+              <span>Global</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Track record and growth -->
+    <section class="section" id="track-record">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Track record & growth</span>
+          <h2>Achievements and future agenda given dedicated corporate space</h2>
+          <p>
+            This is where the site begins to look less like a presentation export and more like an investor-facing corporate platform.
+          </p>
+        </div>
+
+        <div class="track-wrap">
+          <article class="track-card fade-up">
+            <h3>Highlights</h3>
+            <div class="track-list">
+              <div><span>Completed 6 deals since 2018</span><small>Record</small></div>
+              <div><span>Delivered 10 million barrels of ESPO crude to China in 2020</span><small>Execution</small></div>
+              <div><span>Signed supply agreements with refineries in Kazakhstan and Azerbaijan</span><small>Expansion</small></div>
+            </div>
+          </article>
+          <article class="growth-card fade-up">
+            <h3>Competitive Advantages & Growth</h3>
+            <div class="growth-list">
+              <div><span>Extensive global network and logistics platform</span><small>Strength</small></div>
+              <div><span>Strong partnerships and reliable financing</span><small>Strength</small></div>
+              <div><span>Experienced leadership and skilled teams</span><small>Strength</small></div>
+              <div><span>Comprehensive portfolio of products</span><small>Strength</small></div>
+              <div><span>Commitment to sustainability and ESG</span><small>Growth</small></div>
+              <div><span>Adoption of AI, IoT and innovation for efficiency</span><small>Growth</small></div>
+              <div><span>Expand into high-growth emerging markets</span><small>Next</small></div>
+              <div><span>Invest in renewable and cleaner energy projects</span><small>Next</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="section" id="sustainability">
+      <div class="container">
+        <div class="section-head fade-up">
+          <span class="eyebrow">Sustainability & future</span>
+          <h2>Sustainability is treated as a strategic narrative, not a decorative ending</h2>
+          <p>
+            The current deck cites broad industry context. That same material is preserved here, but structured to read more credibly on a premium homepage.
+          </p>
+        </div>
+
+        <div class="sustain-grid">
+          <article class="sustain-card fade-up">
+            <h3>Sustainability Strategy</h3>
+            <p>Meet energy needs reliably and economically while making eco-friendly operations a core pillar of management.</p>
+            <div class="biz-list">
+              <div><span>Reliable and economic energy supply</span><small>Principle</small></div>
+              <div><span>Eco-friendly operations as core management pillar</span><small>Principle</small></div>
+              <div><span>Long-term future orientation</span><small>Direction</small></div>
+            </div>
+          </article>
+          <article class="sustain-card fade-up">
+            <h3>Industry Context</h3>
+            <p>These are the sustainability-related figures currently cited in the deck.</p>
+            <div class="biz-list">
+              <div><span><b class="sustain-number">79%</b></span><small>Energy executives view sustainability as a major concern</small></div>
+              <div><span><b class="sustain-number">47%</b></span><small>Have pledged net-zero goals</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Contact / Downloads -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-shell fade-up">
+          <div class="cta-grid">
+            <div class="cta-main">
+              <span class="eyebrow" style="color:#8fd7c5">Conclusion & contact</span>
+              <h3>Towards a Shared Future</h3>
+              <p>
+                CHANGSUNG KOREA supports customers’ success through dependable supply and innovative solutions.
+                With strategic partnerships and an experienced team, the company pursues sustainable growth in the global energy market.
+              </p>
+              <div class="download-actions">
+                <a class="btn primary" href="https://drive.google.com/file/d/1jOv1VPibtE6pg48h9J7A6U_49nfygDRV/view" target="_blank" rel="noopener noreferrer">Download IR PDF</a>
+                <a class="btn secondary" href="https://drive.google.com/file/d/1WbownBeBfTq_xx0l9Bp3hRIJMzEwg61W/view" target="_blank" rel="noopener noreferrer">Open Company Profile</a>
+                <a class="btn secondary" href="mailto:info@changsungkorea.com">Email IR Team</a>
+              </div>
+            </div>
+            <div class="cta-side">
+              <div class="contact-list">
+                <div><span>World Trade Center, 33F</span><small>Office</small></div>
+                <div><span>511 Yeongdong-daero, Gangnam-gu, Seoul</span><small>Address</small></div>
+                <div><span>info@changsungkorea.com</span><small>Email</small></div>
+                <div><span>solda119@naver.com</span><small>Email</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CHANGSUNG KOREA CO., LTD</h4>
+        <p>Together we build a sustainable energy future.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#business">Business</a>
+        <a href="#network">Network</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const navLinks = [...document.querySelectorAll('.nav a')];
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = mobileMenu ? [...mobileMenu.querySelectorAll('a')] : [];
+
+    function handleHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 18);
+    }
+    handleHeader();
+    window.addEventListener('scroll', handleHeader);
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -10% 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = '#' + entry.target.id;
+        const current = navLinks.find(link => link.getAttribute('href') === id);
+        if (entry.isIntersecting && current) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          current.classList.add('active');
+        }
+      });
+    }, { threshold: 0.45 });
+
+    sections.forEach(section => sectionObserver.observe(section));
+
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+      });
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      });
+    }
+  </script>
+</body>
+</html>
