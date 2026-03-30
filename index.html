@@ -80,8 +80,12 @@
         .text-shadow-sm { text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
         .text-shadow-md { text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
 
-        .section-title { @apply text-4xl md:text-5xl font-extrabold text-center text-brand-blue mb-4 tracking-tight; }
-        .section-subtitle { @apply text-lg md:text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto font-medium; }
+        /* Refined Premium Section Headers */
+        .section-header { @apply flex flex-col items-center justify-center text-center mb-20 w-full; }
+        .section-eyebrow { @apply text-brand-accent font-extrabold tracking-[0.2em] uppercase mb-4 text-sm md:text-base; }
+        .section-title { @apply text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue mb-4 tracking-tight leading-tight; }
+        .section-subtitle { @apply text-xl md:text-2xl text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed; }
+        .section-divider { @apply w-20 h-1.5 bg-brand-accent rounded-full mt-8 shadow-sm; }
         
         .nav-link { @apply text-gray-800 hover:text-blue-600 transition-colors duration-300 font-bold tracking-wide relative; }
         .nav-link::after {
@@ -166,9 +170,8 @@
                     </div>
                     
                     <div class="lg:w-3/5">
-                        <span class="text-brand-accent text-6xl font-serif leading-none">"</span>
-                        <h2 class="text-3xl md:text-5xl font-black text-brand-blue mb-8 leading-tight -mt-4">
-                            A Vision for Sustainable Energy,<br>Driven by Global Trust.
+                        <h2 class="text-3xl md:text-5xl font-black text-brand-blue mb-8 leading-tight">
+                            <span class="text-brand-accent font-serif">&ldquo;</span>A Vision for Sustainable Energy,<br>Driven by Global Trust.<span class="text-brand-accent font-serif">&rdquo;</span>
                         </h2>
                         <p class="text-gray-600 text-xl leading-relaxed mb-10 font-medium">
                             CHANGSUNG KOREA manages global energy trade with quality and transparency while leading eco-friendly innovation. Through our expertise in resources and sustainable technology, we are building a resilient and connected world for the next generation.
@@ -185,9 +188,11 @@
         <!-- OUR MISSION -->
         <section id="mission" class="py-32 bg-brand-light/30">
             <div class="container mx-auto px-6">
-                <div class="reveal">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Vision & Value</span>
                     <h2 class="section-title">Our Mission</h2>
                     <p class="section-subtitle">Driving the future of energy through core principles.</p>
+                    <div class="section-divider"></div>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -218,9 +223,11 @@
         <!-- CORPORATE OVERVIEW -->
         <section id="overview" class="py-32 bg-white">
             <div class="container mx-auto px-6 max-w-7xl">
-                <div class="reveal">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Who We Are</span>
                     <h2 class="section-title">Corporate Overview</h2>
                     <p class="section-subtitle">Building global trust since 2018.</p>
+                    <div class="section-divider"></div>
                 </div>
 
                 <div class="bg-brand-blue text-white p-12 lg:p-16 rounded-[2.5rem] shadow-2xl mb-24 reveal">
@@ -281,9 +288,11 @@
         <!-- CORE BUSINESS -->
         <section id="business" class="py-32 bg-gray-50">
             <div class="container mx-auto px-6 max-w-6xl">
-                <div class="reveal">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">What We Do</span>
                     <h2 class="section-title">Core Business Pillars</h2>
                     <p class="section-subtitle">Delivering energy efficiently and reliably across the globe.</p>
+                    <div class="section-divider"></div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
@@ -323,9 +332,11 @@
             <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
             
             <div class="container mx-auto px-6 max-w-7xl relative z-10">
-                <div class="reveal">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow text-blue-400">Global Reach</span>
                     <h2 class="section-title text-white">Global Network & Strategic Advantage</h2>
                     <p class="section-subtitle !text-gray-400">Connecting resources, powering the world.</p>
+                    <div class="section-divider bg-brand-accent"></div>
                 </div>
                 
                 <div class="bg-white/5 p-10 md:p-16 rounded-[2.5rem] border border-white/10 mb-20 backdrop-blur-xl reveal">
@@ -394,9 +405,11 @@
         <!-- TEAM -->
         <section id="team" class="py-32 bg-brand-light/30">
             <div class="container mx-auto px-6 max-w-7xl">
-                <div class="reveal">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Our People</span>
                     <h2 class="section-title">Professional Leadership</h2>
                     <p class="section-subtitle">Experts driving global energy solutions.</p>
+                    <div class="section-divider"></div>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -442,7 +455,12 @@
         <section class="py-32 bg-brand-blue text-white relative overflow-hidden">
             <div class="absolute inset-0 bg-blue-900/50 mix-blend-multiply"></div>
             <div class="container mx-auto px-6 relative z-10 max-w-5xl text-center reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-12 tracking-tight text-white">Commitment to a Greener Future</h2>
+                <div class="section-header reveal">
+                    <span class="section-eyebrow text-yellow-400">Sustainability</span>
+                    <h2 class="section-title text-white">Commitment to a Greener Future</h2>
+                    <p class="section-subtitle text-blue-100">Leading the transition to a sustainable energy ecosystem.</p>
+                    <div class="section-divider bg-white"></div>
+                </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                     <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/20">
