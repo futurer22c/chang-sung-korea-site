@@ -38,7 +38,9 @@
             }
         }
     </script>
-    <style>
+    
+    <!-- 💡 수정됨: Tailwind의 고급 클래스를 적용하기 위해 type="text/tailwindcss" 추가 -->
+    <style type="text/tailwindcss">
         /* Aptos Font Setup */
         @font-face {
             font-family: 'Aptos';
@@ -80,11 +82,11 @@
         .text-shadow-sm { text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
         .text-shadow-md { text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
 
-        /* Refined Premium Section Headers */
+        /* 💡 수정됨: 섹션 헤더 디자인 강화 및 그림자 추가 */
         .section-header { @apply flex flex-col items-center justify-center text-center mb-20 w-full; }
-        .section-eyebrow { @apply text-brand-accent font-extrabold tracking-[0.2em] uppercase mb-4 text-sm md:text-base; }
-        .section-title { @apply text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue mb-4 tracking-tight leading-tight; }
-        .section-subtitle { @apply text-xl md:text-2xl text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed; }
+        .section-eyebrow { @apply text-brand-accent font-extrabold tracking-[0.2em] uppercase mb-4 text-sm md:text-base; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+        .section-title { @apply text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue mb-4 tracking-tight leading-tight; text-shadow: 2px 2px 4px rgba(0,0,0,0.15); }
+        .section-subtitle { @apply text-xl md:text-2xl text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed; text-shadow: 1px 1px 2px rgba(0,0,0,0.05); }
         .section-divider { @apply w-20 h-1.5 bg-brand-accent rounded-full mt-8 shadow-sm; }
         
         .nav-link { @apply text-gray-800 hover:text-blue-600 transition-colors duration-300 font-bold tracking-wide relative; }
@@ -170,8 +172,9 @@
                     </div>
                     
                     <div class="lg:w-3/5">
-                        <h2 class="text-3xl md:text-5xl font-black text-brand-blue mb-8 leading-tight">
-                            <span class="text-brand-accent font-serif">&ldquo;</span>A Vision for Sustainable Energy,<br>Driven by Global Trust.<span class="text-brand-accent font-serif">&rdquo;</span>
+                        <!-- 💡 수정됨: 시작과 끝 따옴표 추가 및 문장 잘림 방지(whitespace-nowrap) -->
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-brand-blue mb-8 leading-tight">
+                            <span class="text-brand-accent font-serif">&ldquo;</span>A Vision for <span class="whitespace-nowrap">Sustainable Energy,</span><br>Driven by Global Trust.<span class="text-brand-accent font-serif">&rdquo;</span>
                         </h2>
                         <p class="text-gray-600 text-xl leading-relaxed mb-10 font-medium">
                             CHANGSUNG KOREA manages global energy trade with quality and transparency while leading eco-friendly innovation. Through our expertise in resources and sustainable technology, we are building a resilient and connected world for the next generation.
@@ -188,6 +191,7 @@
         <!-- OUR MISSION -->
         <section id="mission" class="py-32 bg-brand-light/30">
             <div class="container mx-auto px-6">
+                <!-- 💡 섹션 헤더들이 이제 정상적으로 정중앙에 크고 멋지게 나타납니다 -->
                 <div class="section-header reveal">
                     <span class="section-eyebrow">Vision & Value</span>
                     <h2 class="section-title">Our Mission</h2>
