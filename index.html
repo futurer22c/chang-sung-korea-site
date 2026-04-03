@@ -168,18 +168,20 @@
                     <div class="lg:w-2/5 relative">
                         <div class="absolute -top-10 -left-10 w-32 h-32 bg-brand-light rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
                         <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                        <!-- 💡 사장님 사진 (chairman.png) -->
                         <img src="images/chairman.png" alt="Chairman" class="relative z-10 w-full max-w-sm mx-auto rounded-[2rem] shadow-2xl object-cover aspect-[3/4] border-8 border-white" onerror="this.style.display='none'">
                     </div>
                     
                     <div class="lg:w-3/5">
+                        <!-- 💡 수정됨: 시작과 끝 따옴표 추가 및 문장 잘림 방지(whitespace-nowrap) -->
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-brand-blue mb-8 leading-tight">
                             <span class="text-brand-accent font-serif">&ldquo;</span>A Vision for <span class="whitespace-nowrap">Sustainable Energy,</span><br>Driven by Global Trust.<span class="text-brand-accent font-serif">&rdquo;</span>
                         </h2>
                         <p class="text-gray-600 text-xl leading-relaxed mb-10 font-medium">
                             CHANGSUNG KOREA manages global energy trade with quality and transparency while leading eco-friendly innovation. Through our expertise in resources and sustainable technology, we are building a resilient and connected world for the next generation.
                         </p>
-                        <!-- 💡 수정됨: 사장님 영문 이름 변경 (Jung-han Kim) -->
                         <div class="flex flex-col items-start border-l-4 border-brand-accent pl-6">
+                            <!-- 💡 수정됨: Jung-han Kim 으로 영문 이름 변경 -->
                             <p class="text-2xl font-black text-gray-900 mb-1">Jung-han Kim</p>
                             <p class="text-sm text-gray-500 font-bold uppercase tracking-widest">Chairman & CEO</p>
                         </div>
@@ -191,6 +193,7 @@
         <!-- OUR MISSION -->
         <section id="mission" class="py-32 bg-brand-light/30">
             <div class="container mx-auto px-6">
+                <!-- 💡 섹션 헤더 디자인 강화 및 중앙 정렬 -->
                 <div class="section-header reveal">
                     <span class="section-eyebrow">Vision & Value</span>
                     <h2 class="section-title">Our Mission</h2>
@@ -237,7 +240,6 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <p class="text-brand-accent font-bold tracking-widest uppercase mb-4">Leadership Excellence</p>
-                            <!-- 💡 수정됨: 사장님 영문 이름 변경 (Jung-han Kim) -->
                             <p class="text-2xl leading-relaxed mb-8 font-medium">Chairman Jung-han Kim has successfully led numerous petroleum transactions as a partner and chairman of GEMS HABIL.</p>
                             <ul class="space-y-4 text-lg text-blue-100">
                                 <li class="flex items-center"><span class="text-brand-accent mr-4">■</span> Founded in 2018 | Headquartered in Seoul</li>
@@ -570,4 +572,4 @@
         revealElements.forEach(el => revealObserver.observe(el));
     </script>
 </body>
-    </html>
+</html>
